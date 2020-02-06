@@ -1,0 +1,27 @@
+{
+  "name": "react-node-practice",
+  "version": "1.0.0",
+  "description": "## Learn how to build a react app with node/express/mongoDB",
+  "main": "index.js",
+  "engines": {
+    "node": "12.13.1",
+    "npm": "6.12.1"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chenhe-henry/react-node.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chenhe-henry/react-node/issues"
+  },
+  "homepage": "https://github.com/chenhe-henry/react-node#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
