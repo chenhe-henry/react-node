@@ -1,4 +1,4 @@
-# react-node
+# Project 3
 
 ## Learn how to build a react app with node/express/mongoDB
 
