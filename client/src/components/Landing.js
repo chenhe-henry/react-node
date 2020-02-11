@@ -1,11 +1,12 @@
-import React from "react";
-
+import React, { Fragment } from "react";
+import SearchBox from "./SearchBox";
+import List from "./List";
 const Landing = () => {
   return (
-    <div style={{ textAlign: "center" }}>
-      <h1>Find home 101!</h1>
-      Collect feedback from your users
-    </div>
+    <Fragment>
+      <SearchBox />
+      <List />
+    </Fragment>
   );
 };
 

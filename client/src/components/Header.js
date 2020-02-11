@@ -2,6 +2,8 @@ import React from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 
+import "../assets/Header.scss";
+
 class Header extends React.Component {
   state = {};
   renderContent() {
@@ -10,29 +12,45 @@ class Header extends React.Component {
         return;
       case false:
         return (
-          <li>
-            <a href="/auth/google">Login With Google</a>
-          </li>
+          <a href="/auth/google" className="login-white">
+            Log in
+          </a>
         );
       default:
         return (
-          <li>
-            <a href="/api/logout">Logout</a>
-          </li>
+          <a href="/api/logout" className="login-white">
+            Logout
+          </a>
         );
     }
   }
   render() {
     return (
-      <nav>
-        <div className="nav-wrapper">
-          <Link to={this.props.auth ? "/surveys" : "/"} className="brand-logo">
-            Emaily
-          </Link>
-
-          <ul className="right">{this.renderContent()}</ul>
+      <div className="banner">
+        <div className="banner-container">
+          <div className="banner-container-brand">
+            <Link
+              to={this.props.auth ? "/surveys" : "/"}
+              className="banner-container-brand-link"
+            >
+              Find Home
+            </Link>
+          </div>
+          <div className="banner-container-nav">
+            <div className="banner-container-nav-link">Find a Property</div>
+            <div className="banner-container-nav-link">Research</div>
+            <div className="banner-container-nav-link">Find Agents</div>
+            <div className="banner-container-nav-link">For Owners</div>
+            <div className="banner-container-nav-link">Home Loans</div>
+            <div className="banner-container-nav-link">Insurance</div>
+            <div className="banner-container-nav-link">News</div>
+            <div className="banner-container-nav-link">Commercial</div>
+            <div className="banner-container-nav-link login">
+              {this.renderContent()}
+            </div>
+          </div>
         </div>
-      </nav>
+      </div>
     );
   }
 }
