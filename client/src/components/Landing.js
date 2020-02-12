@@ -6,7 +6,6 @@ const Landing = () => {
     <Fragment>
       <SearchBox />
       <List />
-      <p>hello</p>
     </Fragment>
   );
 };

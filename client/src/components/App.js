@@ -20,7 +20,7 @@ class App extends React.Component {
         <BrowserRouter>
           <div>
             <Header />
-
+            <Filter />
             <Route exact path="/" component={Landing}></Route>
             <Route exact path="/surveys" component={Dashboard}></Route>
             <Route exact path="/surveys/new" component={SurveyNew}></Route>
