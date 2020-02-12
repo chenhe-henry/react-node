@@ -1,0 +1,295 @@
+[
+  {
+    "type": "PropertyListing",
+    "listing": {
+      "listingType": "Sale",
+      "id": 2016055181,
+      "advertiser": {
+        "type": "Agency",
+        "id": 19494,
+        "name": "Richardson & Wrench Bella Vista",
+        "logoUrl": "https://images.domain.com.au/img/Agencys/19494/logo_19494.png",
+        "preferredColourHex": "#152229",
+        "bannerUrl": "https://images.domain.com.au/img/Agencys/19494/banner_19494.png",
+        "contacts": [
+          {
+            "name": "Steven Chung",
+            "photoUrl": "https://images.domain.com.au/img/19494/contact_1441048.jpeg?mod=200210-144916"
+          },
+          {
+            "name": "Raymond Chung",
+            "photoUrl": "https://images.domain.com.au/img/19494/contact_986978.jpeg?mod=200210-144916"
+          }
+        ]
+      },
+      "priceDetails": {
+        "displayPrice": "Contact Agent"
+      },
+      "media": [
+        {
+          "category": "Image",
+          "url": "https://bucket-api.domain.com.au/v1/bucket/image/2016055181_1_1_200205_011506-w1000-h667"
+        },
+        {
+          "category": "Image",
+          "url": "https://bucket-api.domain.com.au/v1/bucket/image/2016055181_2_1_200205_011506-w1000-h667"
+        },
+        {
+          "category": "Image",
+          "url": "https://bucket-api.domain.com.au/v1/bucket/image/2016055181_3_1_200205_011506-w1000-h667"
+        },
+        {
+          "category": "Image",
+          "url": "https://bucket-api.domain.com.au/v1/bucket/image/2016055181_4_1_200205_011506-w1000-h667"
+        },
+        {
+          "category": "Image",
+          "url": "https://bucket-api.domain.com.au/v1/bucket/image/2016055181_5_1_200205_011506-w1000-h667"
+        }
+      ],
+      "propertyDetails": {
+        "state": "NSW",
+        "features": [
+          "AirConditioning",
+          "BuiltInWardrobes",
+          "Gas",
+          "Dishwasher",
+          "Study",
+          "Shed",
+          "SolarPanels"
+        ],
+        "propertyType": "House",
+        "allPropertyTypes": ["House"],
+        "bathrooms": 2.0,
+        "bedrooms": 4.0,
+        "carspaces": 1,
+        "unitNumber": "",
+        "streetNumber": "21",
+        "street": "Karingal Avenue",
+        "area": "Northern Suburbs",
+        "region": "Sydney Region",
+        "suburb": "CARLINGFORD",
+        "postcode": "2118",
+        "displayableAddress": "21 Karingal Avenue, Carlingford",
+        "latitude": -33.77924,
+        "longitude": 151.038925,
+        "landArea": 697.0
+      },
+      "headline": "A Place to call Home situated on a peaceful reserve",
+      "summaryDescription": "<b></b><br />This sophisticated single level family home is set on a 697 square meter block, located in the highly sought-after location of Carlingford. The skilfully devised layout creates a brilliant sense of warmth and comfort throughout.  The home ...",
+      "hasFloorplan": false,
+      "hasVideo": false,
+      "labels": ["New"],
+      "inspectionSchedule": {
+        "byAppointment": false,
+        "recurring": false,
+        "times": [
+          {
+            "openingTime": "2020-02-12T18:00:00",
+            "closingTime": "2020-02-12T18:30:00"
+          },
+          {
+            "openingTime": "2020-02-15T13:30:00",
+            "closingTime": "2020-02-15T14:00:00"
+          }
+        ]
+      },
+      "listingSlug": "21-karingal-avenue-carlingford-nsw-2118-2016055181"
+    }
+  },
+  {
+    "type": "PropertyListing",
+    "listing": {
+      "listingType": "Sale",
+      "id": 2015968170,
+      "advertiser": {
+        "type": "Agency",
+        "id": 7938,
+        "name": "LJ Hooker Castle Hill & Kellyville",
+        "logoUrl": "https://images.domain.com.au/img/Agencys/7938/logo_7938.png?date=131816438338865406",
+        "preferredColourHex": "#000000",
+        "bannerUrl": "https://images.domain.com.au/img/Agencys/7938/banner_7938.png?date=131816438710725294",
+        "contacts": [
+          {
+            "name": "Imran Haq",
+            "photoUrl": "https://images.domain.com.au/img/7938/contact_1717991.jpeg?mod=200211-090058"
+          }
+        ]
+      },
+      "priceDetails": {
+        "displayPrice": "Auction Guide: $1,495,000"
+      },
+      "media": [
+        {
+          "category": "Image",
+          "url": "https://bucket-api.domain.com.au/v1/bucket/image/2015968170_7_1_191217_042056-w1600-h1067"
+        },
+        {
+          "category": "Image",
+          "url": "https://bucket-api.domain.com.au/v1/bucket/image/2015968170_1_1_191217_042056-w1600-h1200"
+        },
+        {
+          "category": "Image",
+          "url": "https://bucket-api.domain.com.au/v1/bucket/image/2015968170_5_1_191217_042056-w1600-h1200"
+        },
+        {
+          "category": "Image",
+          "url": "https://bucket-api.domain.com.au/v1/bucket/image/2015968170_3_1_191217_042056-w1600-h1200"
+        },
+        {
+          "category": "Image",
+          "url": "https://bucket-api.domain.com.au/v1/bucket/image/2015968170_4_1_191217_042056-w1600-h1200"
+        }
+      ],
+      "propertyDetails": {
+        "state": "NSW",
+        "features": [
+          "AirConditioning",
+          "Ensuite",
+          "SecureParking",
+          "SwimmingPool",
+          "AlarmSystem",
+          "Study"
+        ],
+        "propertyType": "House",
+        "allPropertyTypes": ["House"],
+        "bathrooms": 3.0,
+        "bedrooms": 6.0,
+        "carspaces": 2,
+        "unitNumber": "",
+        "streetNumber": "39",
+        "street": "Yarralumla Drive",
+        "area": "Northern Suburbs",
+        "region": "Sydney Region",
+        "suburb": "CARLINGFORD",
+        "postcode": "2118",
+        "displayableAddress": "39 Yarralumla Drive, Carlingford",
+        "latitude": -33.7815437,
+        "longitude": 151.026367,
+        "landArea": 696.0
+      },
+      "headline": "AUCTION 29th February at 1:30PM",
+      "summaryDescription": "<b></b><br />SPACIOUS SIX BEDROOM HOUSE CLOSE TO JAMES RUSE HIGH, KINGS SCHOOL & TARA GIRLS\r\n\r\nLocated within the highly sought after Kingsdene Estate, this impressive home is the ideal family sanctuary with multiple entertaining areas, Balinese inspir...",
+      "hasFloorplan": true,
+      "hasVideo": false,
+      "labels": [],
+      "auctionSchedule": {
+        "time": "2020-02-29T13:30:00",
+        "auctionLocation": "On site"
+      },
+      "inspectionSchedule": {
+        "byAppointment": false,
+        "recurring": false,
+        "times": [
+          {
+            "openingTime": "2020-02-15T11:00:00",
+            "closingTime": "2020-02-15T11:30:00"
+          },
+          {
+            "openingTime": "2020-02-22T11:00:00",
+            "closingTime": "2020-02-22T11:30:00"
+          }
+        ]
+      },
+      "listingSlug": "39-yarralumla-drive-carlingford-nsw-2118-2015968170"
+    }
+  },
+  {
+    "type": "PropertyListing",
+    "listing": {
+      "listingType": "Sale",
+      "id": 2016041020,
+      "advertiser": {
+        "type": "Agency",
+        "id": 361,
+        "name": "McGrath Epping",
+        "logoUrl": "https://images.domain.com.au/img/Agencys/361/logo_361.GIF",
+        "preferredColourHex": "#000018",
+        "bannerUrl": "https://images.domain.com.au/img/Agencys/361/banner_361.GIF",
+        "contacts": [
+          {
+            "name": "Betty Ockerlander",
+            "photoUrl": "https://images.domain.com.au/img/361/contact_1214662.jpeg?mod=200210-160858"
+          },
+          {
+            "name": "Preston Stewart",
+            "photoUrl": "https://images.domain.com.au/img/361/contact_1617429.jpeg?mod=200210-160858"
+          }
+        ]
+      },
+      "priceDetails": {
+        "displayPrice": "Auction guide $1,300,000 - $1,430,000"
+      },
+      "media": [
+        {
+          "category": "Image",
+          "url": "https://bucket-api.domain.com.au/v1/bucket/image/2016041020_1_1_200130_023517-w1600-h1200"
+        },
+        {
+          "category": "Image",
+          "url": "https://bucket-api.domain.com.au/v1/bucket/image/2016041020_2_1_200130_023517-w1600-h1200"
+        },
+        {
+          "category": "Image",
+          "url": "https://bucket-api.domain.com.au/v1/bucket/image/2016041020_3_1_200130_023517-w1600-h1200"
+        },
+        {
+          "category": "Image",
+          "url": "https://bucket-api.domain.com.au/v1/bucket/image/2016041020_4_1_200130_023517-w1600-h1200"
+        },
+        {
+          "category": "Image",
+          "url": "https://bucket-api.domain.com.au/v1/bucket/image/2016041020_5_1_200130_023517-w1600-h1200"
+        }
+      ],
+      "propertyDetails": {
+        "state": "NSW",
+        "features": ["AirConditioning", "BuiltInWardrobes", "Ensuite"],
+        "propertyType": "House",
+        "allPropertyTypes": ["House"],
+        "bathrooms": 2.0,
+        "bedrooms": 4.0,
+        "carspaces": 1,
+        "unitNumber": "",
+        "streetNumber": "123",
+        "street": "Balaka Drive",
+        "area": "Northern Suburbs",
+        "region": "Sydney Region",
+        "suburb": "CARLINGFORD",
+        "postcode": "2118",
+        "displayableAddress": "123 Balaka Drive, Carlingford",
+        "latitude": -33.7729645,
+        "longitude": 151.0322,
+        "landArea": 697.0
+      },
+      "headline": "Elevated and light washed family sanctuary",
+      "summaryDescription": "<b></b><br />Perched on the high side of the street, this quality single level home presents an instinctive design providing two enticing living zones and child-friendly gardens. It's in a family oriented area, 100 metres to buses with easy access to s...",
+      "hasFloorplan": true,
+      "hasVideo": false,
+      "labels": [],
+      "auctionSchedule": {
+        "time": "2020-02-22T10:30:00",
+        "auctionLocation": "On Site"
+      },
+      "inspectionSchedule": {
+        "byAppointment": false,
+        "recurring": false,
+        "times": [
+          {
+            "openingTime": "2020-02-12T11:30:00",
+            "closingTime": "2020-02-12T11:50:00"
+          },
+          {
+            "openingTime": "2020-02-15T10:00:00",
+            "closingTime": "2020-02-15T10:30:00"
+          },
+          {
+            "openingTime": "2020-02-22T10:00:00",
+            "closingTime": "2020-02-22T10:30:00"
+          }
+        ]
+      },
+      "listingSlug": "123-balaka-drive-carlingford-nsw-2118-2016041020"
+    }
+  }
+]

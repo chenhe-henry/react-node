@@ -1,0 +1,36 @@
+{
+  "listingType": "Sale",
+  "propertyTypes": [
+    "House"
+  ],
+  "propertyFeatures": [
+    "AirConditioning"
+  ],
+  "listingAttributes": [
+    "HasPhotos"
+  ],
+ 
+  "minBedrooms": 0,
+  "maxBedrooms": 3,
+  "minBathrooms": 0,
+  "maxBathrooms": 2,
+  "minCarspaces": 0,
+  "maxCarspaces": 2,
+  "minPrice": 0,
+  "maxPrice": 1500000,
+  "minLandArea": 0,
+  "maxLandArea": 700,
+  
+  "locations": [
+    {
+      "state": "NSW",
+      "region": "string",
+      "area": "string",
+      "suburb": "string",
+      "postCode": "2000",
+      "includeSurroundingSuburbs": true
+    }
+  ]
+
+ 
+}

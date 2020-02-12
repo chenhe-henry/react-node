@@ -1,0 +1,295 @@
+[
+  {
+    "type": "PropertyListing",
+    "listing": {
+      "listingType": "Sale",
+      "id": 2015968170,
+      "advertiser": {
+        "type": "Agency",
+        "id": 7938,
+        "name": "LJ Hooker Castle Hill & Kellyville",
+        "logoUrl": "https://images.domain.com.au/img/Agencys/7938/logo_7938.png?date=131816438338865406",
+        "preferredColourHex": "#000000",
+        "bannerUrl": "https://images.domain.com.au/img/Agencys/7938/banner_7938.png?date=131816438710725294",
+        "contacts": [
+          {
+            "name": "Imran Haq",
+            "photoUrl": "https://images.domain.com.au/img/7938/contact_1717991.jpeg?mod=200211-090058"
+          }
+        ]
+      },
+      "priceDetails": {
+        "displayPrice": "Auction Guide: $1,495,000"
+      },
+      "media": [
+        {
+          "category": "Image",
+          "url": "https://bucket-api.domain.com.au/v1/bucket/image/2015968170_7_1_191217_042056-w1600-h1067"
+        },
+        {
+          "category": "Image",
+          "url": "https://bucket-api.domain.com.au/v1/bucket/image/2015968170_1_1_191217_042056-w1600-h1200"
+        },
+        {
+          "category": "Image",
+          "url": "https://bucket-api.domain.com.au/v1/bucket/image/2015968170_5_1_191217_042056-w1600-h1200"
+        },
+        {
+          "category": "Image",
+          "url": "https://bucket-api.domain.com.au/v1/bucket/image/2015968170_3_1_191217_042056-w1600-h1200"
+        },
+        {
+          "category": "Image",
+          "url": "https://bucket-api.domain.com.au/v1/bucket/image/2015968170_4_1_191217_042056-w1600-h1200"
+        }
+      ],
+      "propertyDetails": {
+        "state": "NSW",
+        "features": [
+          "AirConditioning",
+          "Ensuite",
+          "SecureParking",
+          "SwimmingPool",
+          "AlarmSystem",
+          "Study"
+        ],
+        "propertyType": "House",
+        "allPropertyTypes": ["House"],
+        "bathrooms": 3.0,
+        "bedrooms": 6.0,
+        "carspaces": 2,
+        "unitNumber": "",
+        "streetNumber": "39",
+        "street": "Yarralumla Drive",
+        "area": "Northern Suburbs",
+        "region": "Sydney Region",
+        "suburb": "CARLINGFORD",
+        "postcode": "2118",
+        "displayableAddress": "39 Yarralumla Drive, Carlingford",
+        "latitude": -33.7815437,
+        "longitude": 151.026367,
+        "landArea": 696.0
+      },
+      "headline": "AUCTION 29th February at 1:30PM",
+      "summaryDescription": "<b></b><br />SPACIOUS SIX BEDROOM HOUSE CLOSE TO JAMES RUSE HIGH, KINGS SCHOOL & TARA GIRLS\r\n\r\nLocated within the highly sought after Kingsdene Estate, this impressive home is the ideal family sanctuary with multiple entertaining areas, Balinese inspir...",
+      "hasFloorplan": true,
+      "hasVideo": false,
+      "labels": [],
+      "auctionSchedule": {
+        "time": "2020-02-29T13:30:00",
+        "auctionLocation": "On site"
+      },
+      "inspectionSchedule": {
+        "byAppointment": false,
+        "recurring": false,
+        "times": [
+          {
+            "openingTime": "2020-02-15T11:00:00",
+            "closingTime": "2020-02-15T11:30:00"
+          },
+          {
+            "openingTime": "2020-02-22T11:00:00",
+            "closingTime": "2020-02-22T11:30:00"
+          }
+        ]
+      },
+      "listingSlug": "39-yarralumla-drive-carlingford-nsw-2118-2015968170"
+    }
+  },
+  {
+    "type": "PropertyListing",
+    "listing": {
+      "listingType": "Sale",
+      "id": 2016033756,
+      "advertiser": {
+        "type": "Agency",
+        "id": 361,
+        "name": "McGrath Epping",
+        "logoUrl": "https://images.domain.com.au/img/Agencys/361/logo_361.GIF",
+        "preferredColourHex": "#000018",
+        "bannerUrl": "https://images.domain.com.au/img/Agencys/361/banner_361.GIF",
+        "contacts": [
+          {
+            "name": "Jodie Wright",
+            "photoUrl": "https://images.domain.com.au/img/361/contact_1201760.jpeg?mod=200128-143852"
+          },
+          {
+            "name": "Annie Zeng",
+            "photoUrl": "https://images.domain.com.au/img/361/contact_1507255.jpeg?mod=200128-143852"
+          }
+        ]
+      },
+      "priceDetails": {
+        "displayPrice": "Price Guide $1,250,000"
+      },
+      "media": [
+        {
+          "category": "Image",
+          "url": "https://bucket-api.domain.com.au/v1/bucket/image/2016033756_1_1_200128_031723-w1600-h1200"
+        },
+        {
+          "category": "Image",
+          "url": "https://bucket-api.domain.com.au/v1/bucket/image/2016033756_2_1_200128_031723-w1600-h1200"
+        },
+        {
+          "category": "Image",
+          "url": "https://bucket-api.domain.com.au/v1/bucket/image/2016033756_3_1_200128_031723-w1600-h1200"
+        },
+        {
+          "category": "Image",
+          "url": "https://bucket-api.domain.com.au/v1/bucket/image/2016033756_4_1_200128_031723-w1600-h1200"
+        },
+        {
+          "category": "Image",
+          "url": "https://bucket-api.domain.com.au/v1/bucket/image/2016033756_5_1_200128_031723-w1600-h1200"
+        }
+      ],
+      "propertyDetails": {
+        "state": "NSW",
+        "features": ["AirConditioning", "BuiltInWardrobes", "Ensuite"],
+        "propertyType": "House",
+        "allPropertyTypes": ["House"],
+        "bathrooms": 2.0,
+        "bedrooms": 5.0,
+        "carspaces": 2,
+        "unitNumber": "",
+        "streetNumber": "6",
+        "street": "Hollister Place",
+        "area": "Northern Suburbs",
+        "region": "Sydney Region",
+        "suburb": "CARLINGFORD",
+        "postcode": "2118",
+        "displayableAddress": "6 Hollister Place, Carlingford",
+        "latitude": -33.76798,
+        "longitude": 151.041931,
+        "landArea": 708.0
+      },
+      "headline": "Comfortable family home in a tranquil setting",
+      "summaryDescription": "<b></b><br />On the high side of an intimate cul-de-sac, this classic home is readymade for relaxed living, revealing an open plan design accentuated with cathedral ceilings. Its desirable setting is in the Murray Farm Public School catchment, with rap...",
+      "hasFloorplan": true,
+      "hasVideo": false,
+      "labels": [],
+      "auctionSchedule": {
+        "time": "2020-02-22T09:45:00",
+        "auctionLocation": "On Site"
+      },
+      "inspectionSchedule": {
+        "byAppointment": false,
+        "recurring": false,
+        "times": [
+          {
+            "openingTime": "2020-02-12T18:00:00",
+            "closingTime": "2020-02-12T18:30:00"
+          },
+          {
+            "openingTime": "2020-02-15T11:30:00",
+            "closingTime": "2020-02-15T12:00:00"
+          },
+          {
+            "openingTime": "2020-02-19T18:00:00",
+            "closingTime": "2020-02-19T18:30:00"
+          },
+          {
+            "openingTime": "2020-02-22T09:15:00",
+            "closingTime": "2020-02-22T09:45:00"
+          }
+        ]
+      },
+      "listingSlug": "6-hollister-place-carlingford-nsw-2118-2016033756"
+    }
+  },
+  {
+    "type": "PropertyListing",
+    "listing": {
+      "listingType": "Sale",
+      "id": 2016020542,
+      "advertiser": {
+        "type": "Agency",
+        "id": 32641,
+        "name": "S|One Estate Agents",
+        "logoUrl": "https://images.domain.com.au/img/Agencys/32641/logo_32641.png",
+        "preferredColourHex": "#000000",
+        "bannerUrl": "https://images.domain.com.au/img/Agencys/32641/banner_32641.png",
+        "contacts": [
+          {
+            "name": "John (junrui) Huang",
+            "photoUrl": "https://images.domain.com.au/img/32641/contact_1713673.jpeg?mod=200207-004253"
+          },
+          {
+            "name": "Mandy (cen) Liang",
+            "photoUrl": "https://images.domain.com.au/img/32641/contact_1713397.jpeg?mod=200207-004253"
+          }
+        ]
+      },
+      "priceDetails": {
+        "displayPrice": "Auction Price Guide $1,600,000"
+      },
+      "media": [
+        {
+          "category": "Image",
+          "url": "https://bucket-api.domain.com.au/v1/bucket/image/2016020542_1_1_200121_075715-w4134-h2756"
+        },
+        {
+          "category": "Image",
+          "url": "https://bucket-api.domain.com.au/v1/bucket/image/2016020542_2_1_200121_075715-w4134-h2756"
+        },
+        {
+          "category": "Image",
+          "url": "https://bucket-api.domain.com.au/v1/bucket/image/2016020542_3_1_200121_075715-w4134-h2756"
+        },
+        {
+          "category": "Image",
+          "url": "https://bucket-api.domain.com.au/v1/bucket/image/2016020542_4_1_200121_075715-w4134-h2756"
+        },
+        {
+          "category": "Image",
+          "url": "https://bucket-api.domain.com.au/v1/bucket/image/2016020542_5_1_200121_075715-w4134-h2756"
+        }
+      ],
+      "propertyDetails": {
+        "state": "NSW",
+        "features": ["AirConditioning", "BuiltInWardrobes", "SecureParking"],
+        "propertyType": "House",
+        "allPropertyTypes": ["House"],
+        "bathrooms": 4.0,
+        "bedrooms": 6.0,
+        "carspaces": 3,
+        "unitNumber": "",
+        "streetNumber": "14",
+        "street": "Mulyan Avenue",
+        "area": "Northern Suburbs",
+        "region": "Sydney Region",
+        "suburb": "CARLINGFORD",
+        "postcode": "2118",
+        "displayableAddress": "14 Mulyan Avenue, Carlingford",
+        "latitude": -33.7851143,
+        "longitude": 151.0608,
+        "landArea": 530.0
+      },
+      "headline": "Brand new five bedroom family home, modern and luxurious finishes, complete with separate one bedroom retreat",
+      "summaryDescription": "<b></b><br />Explore 14 Mulyan Ave Carlingford to touch and feel for yourself an incredible lifestyle. To save your time, create a hassle-free home to truly enhance your experience. Hand made for the best, the home delivers a living experience that is ...",
+      "hasFloorplan": true,
+      "hasVideo": true,
+      "labels": [],
+      "auctionSchedule": {
+        "time": "2020-02-22T12:30:00",
+        "auctionLocation": "On Site"
+      },
+      "inspectionSchedule": {
+        "byAppointment": false,
+        "recurring": false,
+        "times": [
+          {
+            "openingTime": "2020-02-15T12:00:00",
+            "closingTime": "2020-02-15T12:30:00"
+          },
+          {
+            "openingTime": "2020-02-22T12:00:00",
+            "closingTime": "2020-02-22T12:30:00"
+          }
+        ]
+      },
+      "listingSlug": "14-mulyan-avenue-carlingford-nsw-2118-2016020542"
+    }
+  }
+]
