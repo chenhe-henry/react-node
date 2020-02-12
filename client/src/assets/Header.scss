@@ -1,18 +1,9 @@
 .banner {
-  background-image: linear-gradient(
-      rgba(0, 0, 0, 0.4),
-      rgba(255, 255, 255, 0.4)
-    ),
-    url("https://static.domain.com.au/content/web/residential/hero/homepage-12-optimised-desktop.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 30vh;
   &-container {
-    padding: 2rem;
+    background-color: rgb(18, 191, 9);
     display: grid;
-
     grid-template-columns: auto 2fr;
-    grid-template-rows: 1fr 1fr;
     color: white;
     align-items: center;
     text-align: center;
@@ -48,7 +39,13 @@
 }
 .login {
   border-left: 1px solid white;
+
   &-white {
     color: white;
+    text-decoration: none;
   }
+}
+.filter {
+  color: white;
+  text-decoration: none;
 }

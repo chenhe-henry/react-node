@@ -2,4 +2,14 @@
   margin: 2rem;
   padding: 2rem;
   font-size: 2rem;
+  &__search-box {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+  }
+  &__results {
+    border: 2px solid black;
+    font-size: 1rem;
+    margin: 2rem;
+  }
 }

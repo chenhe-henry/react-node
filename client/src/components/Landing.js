@@ -1,10 +1,11 @@
 import React, { Fragment } from "react";
 import SearchBox from "./SearchBox";
 import List from "./List";
+import BackGroundVideo from "./BackGroundVideo";
 const Landing = () => {
   return (
     <Fragment>
-      <SearchBox />
+      {/* <SearchBox /> */}
       <List />
     </Fragment>
   );

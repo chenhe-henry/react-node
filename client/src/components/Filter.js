@@ -1,6 +1,7 @@
 import React from "react";
 import "../assets/Filter.scss";
 import Results from "./Results";
+import { Link } from "react-router-dom";
 // import Results from "./Results";
 const keys = require("../config/keys");
 class Filter extends React.Component {
@@ -36,7 +37,7 @@ class Filter extends React.Component {
     this.setState({ searchData });
     console.log(this.state.searchData);
   };
-
+  detailHandler = () => {};
   componentDidUpdate(prevProps, prevState) {
     if (prevState.searchData !== this.state.searchData) {
       var myHeaders = new Headers();
@@ -94,15 +95,23 @@ class Filter extends React.Component {
   render() {
     const listings = this.state.listing.map((l, index) => {
       return (
-        <div key={index}>
-          <Results key={l.listing.id} list={l.listing} img={l.listing.media} />
+        <div key={index} className="section-filter__results">
+          <Results
+            key={l.listing.id}
+            list={l.listing}
+            img={l.listing.media}
+            onClick={this.detailHandler}
+          />
         </div>
       );
     });
 
     return (
       <div className="section-filter">
-        <form onSubmit={this.submitHandler}>
+        <form
+          onSubmit={this.submitHandler}
+          className="section-filter__search-box"
+        >
           <input
             type="text"
             onChange={this.propertyTypeHandler}
@@ -157,6 +166,7 @@ class Filter extends React.Component {
             placeholder="parkingMax"
             ref={input => (this.parkingMax = input)}
           ></input>
+
           <input type="submit"></input>
         </form>
         <div>{listings}</div>

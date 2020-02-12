@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
+import BackGroundVideo from "./BackGroundVideo";
 
 import "../assets/Header.scss";
 
@@ -27,6 +28,7 @@ class Header extends React.Component {
   render() {
     return (
       <div className="banner">
+        <BackGroundVideo />
         <div className="banner-container">
           <div className="banner-container-brand">
             <Link
@@ -37,14 +39,12 @@ class Header extends React.Component {
             </Link>
           </div>
           <div className="banner-container-nav">
-            <div className="banner-container-nav-link">Find a Property</div>
-            <div className="banner-container-nav-link">Research</div>
-            <div className="banner-container-nav-link">Find Agents</div>
-            <div className="banner-container-nav-link">For Owners</div>
-            <div className="banner-container-nav-link">Home Loans</div>
-            <div className="banner-container-nav-link">Insurance</div>
+            <div className="banner-container-nav-link">
+              <Link to="/filter" className="filter">
+                Find a Property
+              </Link>
+            </div>
             <div className="banner-container-nav-link">News</div>
-            <div className="banner-container-nav-link">Commercial</div>
             <div className="banner-container-nav-link login">
               {this.renderContent()}
             </div>

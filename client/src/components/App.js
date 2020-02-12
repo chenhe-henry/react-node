@@ -7,6 +7,7 @@ import Header from "./Header";
 import Landing from "./Landing";
 import Footer from "./Footer";
 import Filter from "./Filter";
+import Results from "./Results";
 const Dashboard = () => <h2>Dashboard</h2>;
 const SurveyNew = () => <h2>SurveyNew</h2>;
 
@@ -20,11 +21,11 @@ class App extends React.Component {
         <BrowserRouter>
           <div>
             <Header />
-            <Filter />
             <Route exact path="/" component={Landing}></Route>
             <Route exact path="/surveys" component={Dashboard}></Route>
             <Route exact path="/surveys/new" component={SurveyNew}></Route>
             <Route exact path="/filter" component={Filter}></Route>
+            <Route exact path="/results" component={Results}></Route>
             <Footer />
           </div>
         </BrowserRouter>

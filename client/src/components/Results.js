@@ -7,12 +7,12 @@ const Results = props => {
     <div>
       <div>
         <div>{props.list.id}</div>
-        <div>{summary}</div>
-        <div>{props.list.propertyDetails.displayableAddress}</div>
-        <div>{props.list.propertyDetails.postcode}</div>
-        <div>{props.list.propertyDetails.region}</div>
+        <div>Property Description: {summary}</div>
+        <div>Address: {props.list.propertyDetails.displayableAddress}</div>
+        <div>Postcode: {props.list.propertyDetails.postcode}</div>
+        <div>Region: {props.list.propertyDetails.region}</div>
         <div>{props.list.headline}</div>
-        <div>{props.list.priceDetails.displayPrice}</div>
+        <div>Price guide: {props.list.priceDetails.displayPrice}</div>
         <div>
           <img
             src={props.img[imgurlindex].url}
