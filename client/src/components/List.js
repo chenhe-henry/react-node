@@ -20,7 +20,7 @@ class List extends React.Component {
             <p>Insure your property</p>
           </div>
           <div className="list__item-detail">
-            <p>See aution results</p>
+            <p>See auction results</p>
           </div>
         </div>
       </div>
