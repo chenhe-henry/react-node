@@ -1,11 +1,12 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const Results = props => {
   const summary = props.list.summaryDescription.split("<b></b><br />");
   const imgurlindex = Math.floor(Math.random() * 5);
   return (
     <div>
-      <div>
+      {/* <Link to="/fullresult"> */}
+      <div onClick={props.clicked}>
         <div>{props.list.id}</div>
         <div>Property Description: {summary}</div>
         <div>Address: {props.list.propertyDetails.displayableAddress}</div>
@@ -13,15 +14,15 @@ const Results = props => {
         <div>Region: {props.list.propertyDetails.region}</div>
         <div>{props.list.headline}</div>
         <div>Price guide: {props.list.priceDetails.displayPrice}</div>
-        <div>
+        {/* <div>
           <img
             src={props.img[imgurlindex].url}
             height="500px"
             width="500px"
             alt="property-img"
           />
-        </div>
-        {/* <div>
+        </div> */}
+        <div>
           {props.img.map((i, index) => (
             <img
               key={index}
@@ -31,7 +32,7 @@ const Results = props => {
               alt="pics"
             ></img>
           ))}
-        </div> */}
+        </div>
         <h1>Contact:</h1>
         <div>{props.list.advertiser.name}</div>
         <div>
@@ -48,6 +49,7 @@ const Results = props => {
           ))}
         </div>
       </div>
+      {/* </Link> */}
     </div>
   );
 };

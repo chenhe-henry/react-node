@@ -2,12 +2,14 @@ import React from "react";
 import "../assets/Filter.scss";
 import Results from "./Results";
 import { Link } from "react-router-dom";
+import FullResult from "./FullResult";
 // import Results from "./Results";
 const keys = require("../config/keys");
 class Filter extends React.Component {
   state = {
     listing: [],
-    searchData: []
+    searchData: [],
+    selectedListingId: null
   };
 
   submitHandler = event => {
@@ -37,7 +39,10 @@ class Filter extends React.Component {
     this.setState({ searchData });
     console.log(this.state.searchData);
   };
-  detailHandler = () => {};
+  imgSeletedHandler = id => {
+    this.setState({ selectedListingId: id });
+    console.log("id :", id);
+  };
   componentDidUpdate(prevProps, prevState) {
     if (prevState.searchData !== this.state.searchData) {
       var myHeaders = new Headers();
@@ -100,7 +105,7 @@ class Filter extends React.Component {
             key={l.listing.id}
             list={l.listing}
             img={l.listing.media}
-            onClick={this.detailHandler}
+            clicked={() => this.imgSeletedHandler(l.listing.id)}
           />
         </div>
       );
@@ -169,7 +174,10 @@ class Filter extends React.Component {
 
           <input type="submit"></input>
         </form>
-        <div>{listings}</div>
+        <div>
+          <FullResult id={this.state.selectedListingId} />
+          {listings}
+        </div>
       </div>
     );
   }

@@ -8,6 +8,7 @@ import Landing from "./Landing";
 import Footer from "./Footer";
 import Filter from "./Filter";
 import Results from "./Results";
+import FullResult from "./FullResult";
 const Dashboard = () => <h2>Dashboard</h2>;
 const SurveyNew = () => <h2>SurveyNew</h2>;
 
@@ -26,6 +27,7 @@ class App extends React.Component {
             <Route exact path="/surveys/new" component={SurveyNew}></Route>
             <Route exact path="/filter" component={Filter}></Route>
             <Route exact path="/results" component={Results}></Route>
+            <Route exact path="/fullresult" component={FullResult}></Route>
             <Footer />
           </div>
         </BrowserRouter>
