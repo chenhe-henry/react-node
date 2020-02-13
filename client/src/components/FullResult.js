@@ -31,7 +31,7 @@ class FullResult extends React.Component {
     let post = "";
     if (this.state.loadedProperty) {
       post = (
-        <div className="result">
+        <div className="full-result">
           <h1>Hi, this is property No.{this.props.id}</h1>
           <p>Bedrooms: {this.state.loadedProperty.bedrooms}</p>
           <p>Bathrooms: {this.state.loadedProperty.bathrooms}</p>

@@ -38,7 +38,15 @@ class Header extends React.Component {
               to={this.props.auth ? "/surveys" : "/"}
               className="section-header-container-brand-link"
             >
-              Find Home
+              <img
+                src="/findhome-logo_transparent.png"
+                height="100px"
+                width="100px"
+                className="section-header-container-brand-link-img"
+              ></img>
+              <p className="section-header-container-brand-link-text">
+                Find Home
+              </p>
             </Link>
           </div>
           <div className="section-header-container-nav">

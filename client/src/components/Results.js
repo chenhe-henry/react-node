@@ -4,7 +4,7 @@ import "../assets/Results.scss";
 const Results = props => {
   const imgurlindex = Math.floor(Math.random() * 5);
   return (
-    <div>
+    <div className="result">
       {/* <Link to="/fullresult"> */}
       <div onClick={props.clicked}>
         <div>{props.list.id}</div>

@@ -3,7 +3,7 @@
   &-container {
     background-color: rgb(18, 191, 9);
     display: grid;
-    grid-template-columns: auto 2fr;
+    grid-template-columns: 1fr 1fr;
     color: white;
     align-items: center;
     text-align: center;
@@ -17,9 +17,14 @@
       &-link {
         color: white;
         text-decoration: none;
+        display: flex;
+        &-img {
+          margin: 1.6rem;
+        }
       }
     }
     &-nav {
+      font-size: 1.5rem;
       font-weight: 600;
       margin: 2rem;
       display: grid;
