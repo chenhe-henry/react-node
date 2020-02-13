@@ -2,32 +2,45 @@ import React from "react";
 const keys = require("../config/keys");
 class FullResult extends React.Component {
   state = { loadedProperty: null };
-  componentDidMount() {
-    var myHeaders = new Headers();
-    myHeaders.append("Content-Type", "application/json");
-    myHeaders.append("X-Api-Key", keys.apiKey);
+  componentDidUpdate(prevProps, prevState) {
+    if (prevProps.id !== this.props.id) {
+      var myHeaders = new Headers();
+      myHeaders.append("Content-Type", "application/json");
+      myHeaders.append("X-Api-Key", keys.domainApiKey);
 
-    var requestOptions = {
-      method: "GET",
-      headers: myHeaders,
-      redirect: "follow"
-    };
+      var requestOptions = {
+        method: "GET",
+        headers: myHeaders,
+        redirect: "follow"
+      };
 
-    fetch(
-      "https://api.domain.com.au/v1/listings/" + this.props.id,
-      requestOptions
-    )
-      .then(response => response.json())
-      .then(result => {
-        console.log(result);
-        this.setState({ loadedProperty: result });
-      })
-      .catch(error => console.log("error", error));
+      fetch(
+        "https://api.domain.com.au/v1/listings/" + this.props.id,
+        requestOptions
+      )
+        .then(response => response.json())
+        .then(result => {
+          console.log(result);
+          this.setState({ loadedProperty: result });
+        })
+        .catch(error => console.log("error", error));
+    }
   }
   render() {
-    let post = <p>haha</p>;
+    let post = <h1>no property select yet</h1>;
     if (this.state.loadedProperty) {
-      post = <h1>{this.state.loadedProperty.type}</h1>;
+      post = (
+        <div>
+          <p>Bedrooms: {this.state.loadedProperty.bedrooms}</p>
+          <p>Bathrooms: {this.state.loadedProperty.bathrooms}</p>
+          <p>Carspaces: {this.state.loadedProperty.carspaces}</p>
+          <p>Description: {this.state.loadedProperty.description}</p>
+          <p>
+            Address: {this.state.loadedProperty.addressParts.displayAddress}
+          </p>
+          <p>Date available: {this.state.loadedProperty.dateAvailable}</p>
+        </div>
+      );
     }
 
     return (
