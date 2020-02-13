@@ -23,11 +23,11 @@ class App extends React.Component {
           <div className="all">
             <Header />
             <Route exact path="/" component={Landing}></Route>
-            <Route exact path="/surveys" component={Dashboard}></Route>
-            <Route exact path="/surveys/new" component={SurveyNew}></Route>
+            <Route exact path="/dashboard" component={Dashboard}></Route>
+            {/* <Route exact path="/surveys/new" component={SurveyNew}></Route> */}
             <Route exact path="/filter" component={Filter}></Route>
             <Route exact path="/results" component={Results}></Route>
-            <Route exact path="/fullresult" component={FullResult}></Route>
+            <Route exact path="/fullresult/:id" component={FullResult}></Route>
             <Footer />
           </div>
         </BrowserRouter>

@@ -36,10 +36,21 @@ class FullResult extends React.Component {
     if (this.state.loadedProperty) {
       post = (
         <div className="full-result">
-          <h1>Hi, this is property No.{this.props.id}</h1>
+          <h1>{this.state.loadedProperty.headline}</h1>
           <p>Bedrooms: {this.state.loadedProperty.bedrooms}</p>
           <p>Bathrooms: {this.state.loadedProperty.bathrooms}</p>
           <p>Carspaces: {this.state.loadedProperty.carspaces}</p>
+          <div>
+            {this.state.loadedProperty.media.map((i, index) => (
+              <img
+                key={index}
+                src={i.url}
+                height="300px"
+                width="400px"
+                alt="pics"
+              ></img>
+            ))}
+          </div>
           <p>Description: {this.state.loadedProperty.description}</p>
           <p>
             Address: {this.state.loadedProperty.addressParts.displayAddress}

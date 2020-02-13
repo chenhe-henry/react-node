@@ -55,13 +55,13 @@ class Filter extends React.Component {
         propertyFeatures: ["AirConditioning"],
         listingAttributes: ["HasPhotos"],
         minBedrooms: this.state.searchData.bedroomMin,
-        maxBedrooms: this.state.searchData.maxBedrooms,
-        minBathrooms: this.state.searchData.minBathrooms,
-        maxBathrooms: this.state.searchData.maxBathrooms,
-        minCarspaces: this.state.searchData.minCarspaces,
-        maxCarspaces: this.state.searchData.maxCarspaces,
-        minPrice: this.state.searchData.minPrice,
-        maxPrice: this.state.searchData.maxPrice,
+        maxBedrooms: this.state.searchData.bedroomMax,
+        minBathrooms: this.state.searchData.bathroomMin,
+        maxBathrooms: this.state.searchData.bathroomMax,
+        minCarspaces: this.state.searchData.parkingMin,
+        maxCarspaces: this.state.searchData.parkingMax,
+        minPrice: this.state.searchData.priceMin,
+        maxPrice: this.state.searchData.priceMax,
         minLandArea: this.state.searchData.minLandArea,
         maxLandArea: this.state.searchData.maxLandArea,
         pageSize: 3,
@@ -83,7 +83,7 @@ class Filter extends React.Component {
         body: raw,
         redirect: "follow"
       };
-
+      console.log(raw);
       fetch(
         "https://api.domain.com.au/v1/listings/residential/_search",
         requestOptions
@@ -174,6 +174,8 @@ class Filter extends React.Component {
 
           <input type="submit"></input>
         </form>
+        <h1>minBedrooms: {this.state.searchData.bedroomMin}</h1>
+        <h1>maxBedrooms: {this.state.searchData.bedroomMax}</h1>
         <div>{listings}</div>
       </div>
     );

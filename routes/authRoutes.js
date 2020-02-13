@@ -8,11 +8,12 @@ module.exports = app => {
     })
   );
 
+  // setup route to dashboard after login
   app.get(
     "/auth/google/callback",
     passport.authenticate("google"),
     (req, res) => {
-      res.redirect("/surveys");
+      res.redirect("/dashboard");
     }
   );
 

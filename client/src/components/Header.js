@@ -34,10 +34,7 @@ class Header extends React.Component {
         <BackGroundVideo />
         <div className="section-header-container">
           <div className="section-header-container-brand">
-            <Link
-              to={this.props.auth ? "/surveys" : "/"}
-              className="section-header-container-brand-link"
-            >
+            <Link to="/" className="section-header-container-brand-link">
               <img
                 src="/findhome-logo_transparent.png"
                 height="100px"

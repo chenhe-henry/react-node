@@ -7,7 +7,7 @@ const Results = props => {
     <div className="result">
       <Link
         to={{
-          pathname: "/fullresult",
+          pathname: "/fullresult/" + props.list.id,
           state: { id: props.list.id }
         }}
       >
@@ -16,21 +16,24 @@ const Results = props => {
           <div>
             <strong>{props.list.headline}</strong>
           </div>
+          <div>Bedrooms: {props.list.propertyDetails.bedrooms}</div>
+          <div>Bathrooms: {props.list.propertyDetails.bathrooms}</div>
+          <div>Carspaces: {props.list.propertyDetails.carspaces}</div>
           <div>
             Address: {props.list.propertyDetails.displayableAddress},{" "}
             {props.list.propertyDetails.postcode},{" "}
             {props.list.propertyDetails.state}
           </div>
           <div>Price guide: {props.list.priceDetails.displayPrice}</div>
-          {/* <div>
-          <img
-            src={props.img[imgurlindex].url}
-            height="500px"
-            width="500px"
-            alt="property-img"
-          />
-        </div> */}
           <div>
+            <img
+              src={props.img[imgurlindex].url}
+              height="300px"
+              width="400px"
+              alt="property-img"
+            />
+          </div>
+          {/* <div>
             {props.img.map((i, index) => (
               <img
                 key={index}
@@ -40,7 +43,7 @@ const Results = props => {
                 alt="pics"
               ></img>
             ))}
-          </div>
+          </div> */}
           <h1>Contact:</h1>
           <div>{props.list.advertiser.name}</div>
           <div>
