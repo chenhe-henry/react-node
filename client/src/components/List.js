@@ -8,7 +8,7 @@ class List extends React.Component {
         <div className="list__title">While you are here</div>
         <div className="list__item">
           <div className="list__item-detail">
-            <p>Explore home loans</p>
+            <p>Search property as you wish</p>
           </div>
           <div className="list__item-detail">
             <p>See what your property may be worth</p>

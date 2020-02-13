@@ -174,10 +174,7 @@ class Filter extends React.Component {
 
           <input type="submit"></input>
         </form>
-        <div>
-          <FullResult id={this.state.selectedListingId} />
-          {listings}
-        </div>
+        <div>{listings}</div>
       </div>
     );
   }

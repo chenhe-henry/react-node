@@ -9,7 +9,7 @@ class Footer extends React.Component {
       <footer className="footer">
         <div className="footer--primary">
           <div className="footer--primary-brand">
-            <strong>Domain</strong>
+            <strong>Find Home</strong>
           </div>
           <div className="footer--primary-link">
             <strong>Help</strong>

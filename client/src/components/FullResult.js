@@ -2,9 +2,13 @@ import React from "react";
 import "../assets/FullResult.scss";
 const keys = require("../config/keys");
 class FullResult extends React.Component {
-  state = { loadedProperty: null };
+  state = { loadedProperty: null, id: null };
+  componentDidMount() {
+    console.log(this.props.history.location.state.id);
+    this.setState({ id: this.props.history.location.state.id });
+  }
   componentDidUpdate(prevProps, prevState) {
-    if (prevProps.id !== this.props.id) {
+    if (prevState.id !== this.state.id) {
       var myHeaders = new Headers();
       myHeaders.append("Content-Type", "application/json");
       myHeaders.append("X-Api-Key", keys.domainApiKey);
@@ -16,7 +20,7 @@ class FullResult extends React.Component {
       };
 
       fetch(
-        "https://api.domain.com.au/v1/listings/" + this.props.id,
+        "https://api.domain.com.au/v1/listings/" + this.state.id,
         requestOptions
       )
         .then(response => response.json())
