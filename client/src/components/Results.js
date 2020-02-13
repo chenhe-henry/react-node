@@ -1,18 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../assets/Results.scss";
 const Results = props => {
-  const summary = props.list.summaryDescription.split("<b></b><br />");
   const imgurlindex = Math.floor(Math.random() * 5);
   return (
     <div>
       {/* <Link to="/fullresult"> */}
       <div onClick={props.clicked}>
         <div>{props.list.id}</div>
-        <div>Property Description: {summary}</div>
-        <div>Address: {props.list.propertyDetails.displayableAddress}</div>
-        <div>Postcode: {props.list.propertyDetails.postcode}</div>
-        <div>Region: {props.list.propertyDetails.region}</div>
-        <div>{props.list.headline}</div>
+        <div>
+          <strong>{props.list.headline}</strong>
+        </div>
+        <div>
+          Address: {props.list.propertyDetails.displayableAddress},{" "}
+          {props.list.propertyDetails.postcode},{" "}
+          {props.list.propertyDetails.state}
+        </div>
         <div>Price guide: {props.list.priceDetails.displayPrice}</div>
         {/* <div>
           <img
@@ -39,12 +42,15 @@ const Results = props => {
           {props.list.advertiser.contacts.map(c => (
             <div>
               <div>{c.name}</div>
-              <img
-                src={c.photoUrl}
-                height="300px"
-                width="300px"
-                alt={c.name}
-              ></img>
+              <div className="contact-wrapper">
+                <img
+                  src={c.photoUrl}
+                  height="300px"
+                  width="300px"
+                  alt={c.name}
+                  className="contact-wrapper-pic"
+                ></img>
+              </div>
             </div>
           ))}
         </div>

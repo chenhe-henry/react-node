@@ -1,0 +1,13 @@
+.contact-wrapper {
+  width: 5rem;
+  height: 5rem;
+  -webkit-shape-outside: circle(50% at 50% 50%);
+  shape-outside: circle(50% at 50% 50%);
+  -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+  position: relative;
+  &-pic {
+    height: 100%;
+    width: 100%;
+  }
+}

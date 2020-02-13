@@ -19,33 +19,36 @@ class Header extends React.Component {
         );
       default:
         return (
-          <a href="/api/logout" className="login-white">
-            Logout
-          </a>
+          <div>
+            <div>{this.props.auth.googleId}</div>
+            <a href="/api/logout" className="login-white">
+              Logout
+            </a>
+          </div>
         );
     }
   }
   render() {
     return (
-      <div className="banner">
+      <div className="section-header">
         <BackGroundVideo />
-        <div className="banner-container">
-          <div className="banner-container-brand">
+        <div className="section-header-container">
+          <div className="section-header-container-brand">
             <Link
               to={this.props.auth ? "/surveys" : "/"}
-              className="banner-container-brand-link"
+              className="section-header-container-brand-link"
             >
               Find Home
             </Link>
           </div>
-          <div className="banner-container-nav">
-            <div className="banner-container-nav-link">
+          <div className="section-header-container-nav">
+            <div className="section-header-container-nav-link">
               <Link to="/filter" className="filter">
                 Find a Property
               </Link>
             </div>
-            <div className="banner-container-nav-link">News</div>
-            <div className="banner-container-nav-link login">
+            <div className="section-header-container-nav-link">News</div>
+            <div className="section-header-container-nav-link login">
               {this.renderContent()}
             </div>
           </div>

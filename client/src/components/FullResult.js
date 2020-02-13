@@ -1,4 +1,5 @@
 import React from "react";
+import "../assets/FullResult.scss";
 const keys = require("../config/keys");
 class FullResult extends React.Component {
   state = { loadedProperty: null };
@@ -27,10 +28,11 @@ class FullResult extends React.Component {
     }
   }
   render() {
-    let post = <h1>no property select yet</h1>;
+    let post = "";
     if (this.state.loadedProperty) {
       post = (
-        <div>
+        <div className="result">
+          <h1>Hi, this is property No.{this.props.id}</h1>
           <p>Bedrooms: {this.state.loadedProperty.bedrooms}</p>
           <p>Bathrooms: {this.state.loadedProperty.bathrooms}</p>
           <p>Carspaces: {this.state.loadedProperty.carspaces}</p>
@@ -43,12 +45,7 @@ class FullResult extends React.Component {
       );
     }
 
-    return (
-      <div>
-        <h1>{this.props.id}</h1>
-        {post}
-      </div>
-    );
+    return <div>{post}</div>;
   }
 }
 
