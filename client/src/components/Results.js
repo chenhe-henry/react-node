@@ -10,6 +10,7 @@ const Results = props => {
           pathname: "/fullresult/" + props.list.id,
           state: { id: props.list.id }
         }}
+        className="result-link"
       >
         <div onClick={props.clicked}>
           <div>{props.list.id}</div>

@@ -3,6 +3,7 @@ import { BrowserRouter, Route } from "react-router-dom";
 import { connect } from "react-redux";
 import * as actions from "../actions";
 import "../assets/App.scss";
+// import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./Header";
 import Landing from "./Landing";
 import Footer from "./Footer";
@@ -10,7 +11,7 @@ import Filter from "./Filter";
 import Results from "./Results";
 import FullResult from "./FullResult";
 
-const Dashboard = () => <h2>Dashboard</h2>;
+const Dashboard = () => <h1>Coming Soon...</h1>;
 class App extends React.Component {
   componentDidMount() {
     this.props.fetchUser();

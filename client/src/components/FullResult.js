@@ -1,5 +1,7 @@
 import React from "react";
 import "../assets/FullResult.scss";
+
+// import Carousel from "react-bootstrap/Carousel";
 // const keys = require("../config/keys");
 class FullResult extends React.Component {
   state = { loadedProperty: null, id: null };
@@ -45,17 +47,31 @@ class FullResult extends React.Component {
           </p>
           <p>Date available: {this.state.loadedProperty.dateAvailable}</p>
           <div>
+            {/* <Carousel> */}
             {this.state.loadedProperty.media.map((i, index) => (
-              <img
-                key={index}
-                src={i.url}
-                height="300px"
-                width="400px"
-                alt="pics"
-              ></img>
+              // <Carousel.Item id={index}>
+              <a href={i.url} target="_blank">
+                <img
+                  key={index}
+                  src={i.url}
+                  height="300px"
+                  width="400px"
+                  alt="pics"
+                ></img>
+              </a>
+              // </Carousel.Item>
             ))}
+            {/* </Carousel> */}
           </div>
           <p>Description: {this.state.loadedProperty.description}</p>
+          <h2>Features:</h2>
+          <div>
+            <ul>
+              {this.state.loadedProperty.features.map(f => (
+                <li>{f}</li>
+              ))}
+            </ul>
+          </div>
         </div>
       );
     }

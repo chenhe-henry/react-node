@@ -4,6 +4,10 @@
   font-size: var(--font-size-default);
   margin: var(--margin-box-default);
   padding: var(--padding-box-default);
+  &-link {
+    text-decoration: none;
+    color: black;
+  }
 }
 
 .contact-wrapper {

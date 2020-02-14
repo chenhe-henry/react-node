@@ -4,7 +4,7 @@ import ReactDom from "react-dom";
 import { Provider } from "react-redux";
 import { createStore, applyMiddleware } from "redux";
 import reduxThunk from "redux-thunk";
-
+// import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.scss";
 
 import App from "./components/App";
