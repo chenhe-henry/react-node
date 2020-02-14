@@ -40,6 +40,10 @@ class FullResult extends React.Component {
           <p>Bedrooms: {this.state.loadedProperty.bedrooms}</p>
           <p>Bathrooms: {this.state.loadedProperty.bathrooms}</p>
           <p>Carspaces: {this.state.loadedProperty.carspaces}</p>
+          <p>
+            Address: {this.state.loadedProperty.addressParts.displayAddress}
+          </p>
+          <p>Date available: {this.state.loadedProperty.dateAvailable}</p>
           <div>
             {this.state.loadedProperty.media.map((i, index) => (
               <img
@@ -52,10 +56,6 @@ class FullResult extends React.Component {
             ))}
           </div>
           <p>Description: {this.state.loadedProperty.description}</p>
-          <p>
-            Address: {this.state.loadedProperty.addressParts.displayAddress}
-          </p>
-          <p>Date available: {this.state.loadedProperty.dateAvailable}</p>
         </div>
       );
     }
