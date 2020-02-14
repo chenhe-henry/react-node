@@ -7,26 +7,6 @@ class Footer extends React.Component {
   render() {
     return (
       <footer className="section-footer">
-        <div className="section-footer--primary">
-          <div className="section-footer--primary--brand">
-            <strong>Find Home</strong>
-          </div>
-          <div className="section-footer--primary--navi">
-            <div className="section-footer--primary--navi-link">
-              <strong>Help</strong>
-            </div>
-            <div className="section-footer--primary--navi-link">
-              <strong>Contact</strong>
-            </div>
-            <div className="section-footer--primary--navi-link">
-              <strong>About</strong>
-            </div>
-            <div className="section-footer--primary--navi-link">
-              <strong>Careers</strong>
-            </div>
-          </div>
-        </div>
-
         <div className="section-footer--secondary">
           <div className="section-footer--secondary--info">
             <div className="section-footer--secondary--info-title">
@@ -134,6 +114,13 @@ class Footer extends React.Component {
             </div>
             <div className="section-footer--secondary--info-link">
               Upper North Shore
+            </div>
+          </div>
+        </div>
+        <div className="section-footer--primary">
+          <div className="section-footer--primary--navi">
+            <div className="section-footer--primary--navi-link">
+              <strong>&copy; 2020 Chen He, All Right Reserved.</strong>
             </div>
           </div>
         </div>

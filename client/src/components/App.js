@@ -9,6 +9,7 @@ import Footer from "./Footer";
 import Filter from "./Filter";
 import Results from "./Results";
 import FullResult from "./FullResult";
+
 const Dashboard = () => <h2>Dashboard</h2>;
 class App extends React.Component {
   componentDidMount() {

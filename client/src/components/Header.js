@@ -1,7 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
-import BackGroundVideo from "./BackGroundVideo";
 import "../assets/Header.scss";
 
 class Header extends React.Component {
@@ -22,7 +21,7 @@ class Header extends React.Component {
       default:
         return (
           <div>
-            <div>Welcome, {this.props.auth.googleId}</div>
+            {/* <div>Welcome, {this.props.auth.googleId}</div> */}
             <a
               href="/api/logout"
               className="section-header__nav--navi-link--login-white"
@@ -36,7 +35,6 @@ class Header extends React.Component {
   render() {
     return (
       <div className="section-header">
-        <BackGroundVideo />
         <div className="section-header__nav">
           <div className="section-header__nav--brand">
             <Link to="/" className="section-header__nav--brand-link">
@@ -49,12 +47,12 @@ class Header extends React.Component {
             </Link>
           </div>
           <div className="section-header__nav--navi">
-            <div className="section-header__nav--navi-link">
+            {/* <div className="section-header__nav--navi-link">
               <Link to="/filter" className="section-header__nav--navi-link">
                 Find a Property
               </Link>
             </div>
-            <div className="section-header__nav--navi-link">News</div>
+            <div className="section-header__nav--navi-link">News</div> */}
             <div className="section-header__nav--navi-link--login">
               {this.renderContent()}
             </div>

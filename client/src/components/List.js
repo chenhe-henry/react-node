@@ -1,28 +1,23 @@
 import React from "react";
 import "../assets/List.scss";
+import BackGroundVideo from "./BackGroundVideo";
+import { Link } from "react-router-dom";
 class List extends React.Component {
   state = {};
   render() {
     return (
       <div className="list">
-        <div className="list__title">While you are here</div>
         <div className="list__item">
+          <Link to="/filter" className="word-link">
+            <div className="list__item-detail">
+              <p className="word">Find a property</p>
+            </div>
+          </Link>
           <div className="list__item-detail">
-            <p>Search property as you wish</p>
-          </div>
-          <div className="list__item-detail">
-            <p>See what your property may be worth</p>
-          </div>
-          <div className="list__item-detail">
-            <p>Looking to sell?</p>
-          </div>
-          <div className="list__item-detail">
-            <p>Insure your property</p>
-          </div>
-          <div className="list__item-detail">
-            <p>See auction results</p>
+            <p className="word">News</p>
           </div>
         </div>
+        <BackGroundVideo />
       </div>
     );
   }
