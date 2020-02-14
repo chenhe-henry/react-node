@@ -42,7 +42,6 @@ const Results = props => {
               {props.list.advertiser.contacts.map(c => (
                 <div className="comb">
                   <div>{c.name}</div>
-                  <div>{c.name}</div>
                   <div className="contact-wrapper">
                     <img
                       src={c.photoUrl}
