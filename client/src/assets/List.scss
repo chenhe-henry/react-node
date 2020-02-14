@@ -2,9 +2,8 @@
   &__item {
     position: relative;
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: var(--font-size-link-primary);
     z-index: 1000;
-    color: rgb(53, 50, 50);
     display: flex;
     justify-content: space-evenly;
     transform: translateY(10vh);
@@ -38,7 +37,7 @@
 }
 .word {
   margin-top: 10vh;
-  color: black;
+  color: var(--color-dark-light);
   &-link {
     text-decoration: none;
   }
