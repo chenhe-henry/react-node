@@ -1,5 +1,4 @@
 .result {
-  text-align: center;
   border: 2px solid black;
   font-size: var(--font-size-default);
   margin: var(--margin-box-default);
@@ -11,8 +10,8 @@
 }
 
 .contact-wrapper {
-  width: 5rem;
-  height: 5rem;
+  width: 15rem;
+  height: 15rem;
   -webkit-shape-outside: circle(50% at 50% 50%);
   shape-outside: circle(50% at 50% 50%);
   -webkit-clip-path: circle(50% at 50% 50%);
@@ -22,4 +21,16 @@
     height: 100%;
     width: 100%;
   }
+}
+.all_result {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+}
+.comb {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
 }

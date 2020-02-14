@@ -1,4 +1,8 @@
 .full-result {
   font-size: var(--font-size-default);
   margin: var(--margin-box-default);
+  &-img {
+    margin: 2rem;
+    padding: 2rem;
+  }
 }

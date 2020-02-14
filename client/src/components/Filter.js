@@ -66,7 +66,7 @@ class Filter extends React.Component {
         maxPrice: this.state.searchData.priceMax,
         minLandArea: this.state.searchData.minLandArea,
         maxLandArea: this.state.searchData.maxLandArea,
-        pageSize: 3,
+        pageSize: 5,
         locations: [
           {
             // state: statelocate[Math.floor(Math.random() * 8)],

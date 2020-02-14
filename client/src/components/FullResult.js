@@ -39,13 +39,23 @@ class FullResult extends React.Component {
       post = (
         <div className="full-result">
           <h1>{this.state.loadedProperty.headline}</h1>
-          <p>Bedrooms: {this.state.loadedProperty.bedrooms}</p>
-          <p>Bathrooms: {this.state.loadedProperty.bathrooms}</p>
-          <p>Carspaces: {this.state.loadedProperty.carspaces}</p>
-          <p>
-            Address: {this.state.loadedProperty.addressParts.displayAddress}
-          </p>
-          <p>Date available: {this.state.loadedProperty.dateAvailable}</p>
+          <h3>
+            <strong>Bedrooms:</strong> {this.state.loadedProperty.bedrooms}
+          </h3>
+          <h3>
+            <strong>Bathrooms:</strong> {this.state.loadedProperty.bathrooms}
+          </h3>
+          <h3>
+            <strong>Carspaces:</strong> {this.state.loadedProperty.carspaces}
+          </h3>
+          <h3>
+            <strong>Address:</strong>{" "}
+            {this.state.loadedProperty.addressParts.displayAddress}
+          </h3>
+          <h3>
+            <strong>Date available: </strong>
+            {this.state.loadedProperty.dateAvailable}
+          </h3>
           <div>
             {/* <Carousel> */}
             {this.state.loadedProperty.media.map((i, index) => (
@@ -57,14 +67,22 @@ class FullResult extends React.Component {
                   height="300px"
                   width="400px"
                   alt="pics"
+                  className="full-result-img"
                 ></img>
               </a>
               // </Carousel.Item>
             ))}
             {/* </Carousel> */}
           </div>
-          <p>Description: {this.state.loadedProperty.description}</p>
-          <h2>Features:</h2>
+          <p>
+            <strong>
+              <h3>Description: </h3>
+            </strong>
+            {this.state.loadedProperty.description}
+          </p>
+          <h3>
+            <strong>Features:</strong>
+          </h3>
           <div>
             <ul>
               {this.state.loadedProperty.features.map(f => (
