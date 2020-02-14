@@ -60,7 +60,7 @@ class FullResult extends React.Component {
             {/* <Carousel> */}
             {this.state.loadedProperty.media.map((i, index) => (
               // <Carousel.Item id={index}>
-              <a href={i.url} target="_blank">
+              <a href={i.url} target="_blank" rel="noopener noreferrer">
                 <img
                   key={index}
                   src={i.url}

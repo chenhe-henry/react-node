@@ -50,7 +50,7 @@ class Filter extends React.Component {
       var myHeaders = new Headers();
       myHeaders.append("Content-Type", "application/json");
       myHeaders.append("X-Api-Key", "key_358bea2380f4e7f0acb999de88b0b4e9");
-      var statelocate = ["NSW", "ACT", "QLD", "VIC", "SA", "WA", "NT", "TAS"];
+      // var statelocate = ["NSW", "ACT", "QLD", "VIC", "SA", "WA", "NT", "TAS"];
       var raw = JSON.stringify({
         listingType: "Rent",
         propertyTypes: ["House"],
