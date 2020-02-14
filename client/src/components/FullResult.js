@@ -1,6 +1,6 @@
 import React from "react";
 import "../assets/FullResult.scss";
-const keys = require("../config/keys");
+// const keys = require("../config/keys");
 class FullResult extends React.Component {
   state = { loadedProperty: null, id: null };
   componentDidMount() {

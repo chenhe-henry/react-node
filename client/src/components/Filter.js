@@ -1,10 +1,10 @@
 import React from "react";
 import "../assets/Filter.scss";
 import Results from "./Results";
-import { Link } from "react-router-dom";
-import FullResult from "./FullResult";
+// import { Link } from "react-router-dom";
+// import FullResult from "./FullResult";
 // import Results from "./Results";
-const keys = require("../config/keys");
+// const keys = require("../config/keys");
 class Filter extends React.Component {
   state = {
     listing: [],

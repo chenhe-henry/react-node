@@ -43,6 +43,7 @@ class Header extends React.Component {
               <img
                 src="/findhome-logo_transparent.png"
                 className="section-header__nav--brand-link--img"
+                alt="Find Home Logo"
               ></img>
               <p className="section-header__nav--brand-link--text">Find Home</p>
             </Link>
