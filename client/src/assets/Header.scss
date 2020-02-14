@@ -1,36 +1,52 @@
+@mixin whiteFontWithUnderline {
+  color: var(--color-white);
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 .section-header {
   height: 30vh;
-  &-container {
-    background-color: rgb(18, 191, 9);
+  &__nav {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    position: fixed;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    color: white;
     align-items: center;
     text-align: center;
-    &-brand {
-      color: white;
-      font-weight: 600;
-      font-size: 3rem;
-
+    &--brand {
+      color: var(--color-white);
+      font-weight: var(--font-weight-brand);
+      font-size: var(--font-size-brand-primary);
+      text-transform: uppercase;
       cursor: pointer;
       &-link {
-        color: white;
+        color: var(--color-white);
         text-decoration: none;
         display: flex;
-        &-img {
-          margin: 1.6rem;
+        &--img {
+          height: 10rem;
+          width: 10rem;
+          margin: 2rem 0 2rem 2rem;
         }
       }
     }
-    &-nav {
-      font-size: 1.5rem;
-      font-weight: 600;
+    &--navi {
+      font-size: var(--font-size-link-primary);
+      font-weight: var(--font-weight-brand);
       margin: 2rem;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       &-link {
-        &:hover {
-          text-decoration: underline;
+        @include whiteFontWithUnderline;
+        &--login {
+          border-left: 1px solid var(--color-white);
+          &-white {
+            @include whiteFontWithUnderline;
+          }
         }
       }
       // @media only screen and (max-width: 1600px) {
@@ -40,16 +56,4 @@
       // }
     }
   }
-}
-.login {
-  border-left: 1px solid white;
-
-  &-white {
-    color: white;
-    text-decoration: none;
-  }
-}
-.filter {
-  color: white;
-  text-decoration: none;
 }

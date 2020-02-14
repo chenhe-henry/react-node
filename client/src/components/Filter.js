@@ -47,7 +47,7 @@ class Filter extends React.Component {
     if (prevState.searchData !== this.state.searchData) {
       var myHeaders = new Headers();
       myHeaders.append("Content-Type", "application/json");
-      myHeaders.append("X-Api-Key", keys.domainApiKey);
+      myHeaders.append("X-Api-Key", "key_358bea2380f4e7f0acb999de88b0b4e9");
       var statelocate = ["NSW", "ACT", "QLD", "VIC", "SA", "WA", "NT", "TAS"];
       var raw = JSON.stringify({
         listingType: "Rent",
@@ -117,6 +117,16 @@ class Filter extends React.Component {
           onSubmit={this.submitHandler}
           className="section-filter__search-box"
         >
+          <select>
+            <option value="NSW">NSW</option>
+            <option value="VIC">VIC</option>
+            <option value="QLD">QLD</option>
+            <option value="SA">SA</option>
+            <option value="WA">WA</option>
+            <option value="ACT">ACT</option>
+            <option value="NT">NT</option>
+            <option value="TAS">TAS</option>
+          </select>
           <input
             type="text"
             onChange={this.propertyTypeHandler}
@@ -135,14 +145,22 @@ class Filter extends React.Component {
             placeholder="priceMax"
             ref={input => (this.priceMax = input)}
           ></input>
+          <form>
+            <label for="bedroomMin">Bedroom Min</label>
+            <input
+              id="bedroomMinInput"
+              type="range"
+              min="0"
+              max="5"
+              onChange={this.bedroomMinHandler}
+              placeholder="bedroomMin"
+              ref={input => (this.bedroomMin = input)}
+            ></input>
+          </form>
           <input
-            type="text"
-            onChange={this.bedroomMinHandler}
-            placeholder="bedroomMin"
-            ref={input => (this.bedroomMin = input)}
-          ></input>
-          <input
-            type="text"
+            type="range"
+            min="1"
+            max="7"
             onChange={this.bedroomMaxHandler}
             placeholder="bedroomMax"
             ref={input => (this.bedroomMax = input)}
@@ -174,8 +192,6 @@ class Filter extends React.Component {
 
           <input type="submit"></input>
         </form>
-        <h1>minBedrooms: {this.state.searchData.bedroomMin}</h1>
-        <h1>maxBedrooms: {this.state.searchData.bedroomMax}</h1>
         <div>{listings}</div>
       </div>
     );
