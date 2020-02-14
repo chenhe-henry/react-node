@@ -10,8 +10,7 @@ import Footer from "./Footer";
 import Filter from "./Filter";
 import Results from "./Results";
 import FullResult from "./FullResult";
-
-const Dashboard = () => <h1>Coming Soon...</h1>;
+import Dashboard from "./Dashboard";
 class App extends React.Component {
   componentDidMount() {
     this.props.fetchUser();
