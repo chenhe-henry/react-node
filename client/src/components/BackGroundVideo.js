@@ -2,7 +2,6 @@ import React from "react";
 import video from "../assets/video.mp4";
 import videowebm from "../assets/video.webm";
 import "../assets/BackGroundVideo.scss";
-import List from "./List";
 
 const BackGroundVideo = () => {
   return (

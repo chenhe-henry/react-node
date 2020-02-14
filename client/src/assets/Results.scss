@@ -1,5 +1,9 @@
 .result {
-  // margin-top: 20vh;
+  text-align: center;
+  border: 2px solid black;
+  font-size: var(--font-size-default);
+  margin: var(--margin-box-default);
+  padding: var(--padding-box-default);
 }
 
 .contact-wrapper {

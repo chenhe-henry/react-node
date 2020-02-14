@@ -14,7 +14,8 @@ class Filter extends React.Component {
 
   submitHandler = event => {
     event.preventDefault();
-    const propertyType = this.propertyType.value;
+    const location = this.location.value;
+    // const propertyType = this.propertyType.value;
     const priceMin = this.priceMin.value;
     const priceMax = this.priceMax.value;
     const bedroomMin = this.bedroomMin.value;
@@ -24,7 +25,8 @@ class Filter extends React.Component {
     const parkingMin = this.parkingMin.value;
     const parkingMax = this.parkingMax.value;
     const searchData = {
-      propertyType: propertyType,
+      location: location,
+      // propertyType: propertyType,
       priceMin: priceMin,
       priceMax: priceMax,
       bedroomMin: bedroomMin,
@@ -67,7 +69,8 @@ class Filter extends React.Component {
         pageSize: 3,
         locations: [
           {
-            state: statelocate[Math.floor(Math.random() * 8)],
+            // state: statelocate[Math.floor(Math.random() * 8)],
+            state: this.state.searchData.location,
             region: "",
             area: "",
             suburb: "",
@@ -100,7 +103,7 @@ class Filter extends React.Component {
   render() {
     const listings = this.state.listing.map((l, index) => {
       return (
-        <div key={index} className="section-filter__results">
+        <div key={index}>
           <Results
             key={l.listing.id}
             list={l.listing}
@@ -117,80 +120,157 @@ class Filter extends React.Component {
           onSubmit={this.submitHandler}
           className="section-filter__search-box"
         >
-          <select>
-            <option value="NSW">NSW</option>
-            <option value="VIC">VIC</option>
-            <option value="QLD">QLD</option>
-            <option value="SA">SA</option>
-            <option value="WA">WA</option>
-            <option value="ACT">ACT</option>
-            <option value="NT">NT</option>
-            <option value="TAS">TAS</option>
-          </select>
-          <input
-            type="text"
-            onChange={this.propertyTypeHandler}
-            placeholder="propertyType"
-            ref={input => (this.propertyType = input)}
-          ></input>
-          <input
-            type="text"
-            onChange={this.priceMinHandler}
-            placeholder="priceMin"
-            ref={input => (this.priceMin = input)}
-          ></input>
-          <input
-            type="text"
-            onChange={this.priceMaxHandler}
-            placeholder="priceMax"
-            ref={input => (this.priceMax = input)}
-          ></input>
-          <form>
-            <label for="bedroomMin">Bedroom Min</label>
+          <div className="section-filter__search-box-state">
+            <p>State: </p>
+            <select
+              type="text"
+              onChange={this.locationHandler}
+              placeholder="location"
+              ref={input => (this.location = input)}
+            >
+              <option value="NSW">NSW</option>
+              <option value="VIC">VIC</option>
+              <option value="QLD">QLD</option>
+              <option value="SA">SA</option>
+              <option value="WA">WA</option>
+              <option value="ACT">ACT</option>
+              <option value="NT">NT</option>
+              <option value="TAS">TAS</option>
+            </select>
+          </div>
+          {/* <div className="section-filter__search-box-propertyType">
+            <p>Property Type:</p>
+            <select
+              type="text"
+              onChange={this.propertyTypeHandler}
+              placeholder="propertyType"
+              ref={input => (this.propertyType = input)}
+            >
+              <option value="House">House</option>
+              <option value="TownHouse">TownHouse</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="10">5</option>
+            </select>
+          </div> */}
+
+          <div className="section-filter__search-box-priceMin">
+            <p>Price Min:</p>
             <input
-              id="bedroomMinInput"
-              type="range"
-              min="0"
-              max="5"
+              type="text"
+              onChange={this.priceMinHandler}
+              placeholder="priceMin"
+              ref={input => (this.priceMin = input)}
+            ></input>
+          </div>
+          <div className="section-filter__search-box-priceMax">
+            <p>Price Max:</p>
+            <input
+              type="text"
+              onChange={this.priceMaxHandler}
+              placeholder="priceMax"
+              ref={input => (this.priceMax = input)}
+            ></input>
+          </div>
+          <div className="section-filter__search-box-bedroomMin">
+            <p>Bedroom Min:</p>
+            <select
+              type="text"
               onChange={this.bedroomMinHandler}
               placeholder="bedroomMin"
               ref={input => (this.bedroomMin = input)}
-            ></input>
-          </form>
-          <input
-            type="range"
-            min="1"
-            max="7"
-            onChange={this.bedroomMaxHandler}
-            placeholder="bedroomMax"
-            ref={input => (this.bedroomMax = input)}
-          ></input>
-          <input
-            type="text"
-            onChange={this.bathroomMinHandler}
-            placeholder="bathroomMin"
-            ref={input => (this.bathroomMin = input)}
-          ></input>
-          <input
-            type="text"
-            onChange={this.bathroomMaxHandler}
-            placeholder="bathroomMax"
-            ref={input => (this.bathroomMax = input)}
-          ></input>
-          <input
-            type="text"
-            onChange={this.parkingMinHandler}
-            placeholder="parkingMin"
-            ref={input => (this.parkingMin = input)}
-          ></input>
-          <input
-            type="text"
-            onChange={this.parkingMaxHandler}
-            placeholder="parkingMax"
-            ref={input => (this.parkingMax = input)}
-          ></input>
+            >
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="10">5</option>
+            </select>
+          </div>
+          <div className="section-filter__search-box-bedroomMax">
+            <p>Bedroom Max:</p>
+            <select
+              type="text"
+              onChange={this.bedroomMaxHandler}
+              placeholder="bedroomMax"
+              ref={input => (this.bedroomMax = input)}
+            >
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="">5+</option>
+            </select>
+          </div>
+          <div className="section-filter__search-box-bathroomMin">
+            <p>Bathroom Min:</p>
+            <select
+              type="text"
+              onChange={this.bathroomMinHandler}
+              placeholder="bathroomMin"
+              ref={input => (this.bathroomMin = input)}
+            >
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="10">5</option>
+            </select>
+          </div>
+          <div className="section-filter__search-box-bathroomMax">
+            <p>Bathroom Max:</p>
+            <select
+              type="text"
+              onChange={this.bathroomMaxHandler}
+              placeholder="bathroomMax"
+              ref={input => (this.bathroomMax = input)}
+            >
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="">5+</option>
+            </select>
+          </div>
+          <div className="section-filter__search-box-parkingMin">
+            <p>Parking Min:</p>
+            <select
+              type="text"
+              onChange={this.parkingMinHandler}
+              placeholder="parkingMin"
+              ref={input => (this.parkingMin = input)}
+            >
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="10">5</option>
+            </select>
+          </div>
+          <div className="section-filter__search-box-parkingMax">
+            <p>Parking Max:</p>
+            <select
+              type="text"
+              onChange={this.parkingMaxHandler}
+              placeholder="parkingMax"
+              ref={input => (this.parkingMax = input)}
+            >
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="">5+</option>
+            </select>
+          </div>
 
-          <input type="submit"></input>
+          <input
+            type="submit"
+            value="Search"
+            className="section-filter__search-box-button"
+          ></input>
         </form>
         <div>{listings}</div>
       </div>

@@ -1,17 +1,51 @@
+@mixin input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .section-filter {
-  background-color: white;
-  border: 1px solid grey;
-  margin: 2rem;
-  padding: 2rem;
-  font-size: 2rem;
+  background-color: var(--color-blue-light);
+  font-size: var(--font-size-default);
+  text-align: center;
+  display: grid;
   &__search-box {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 20px;
-  }
-  &__results {
-    border: 2px solid black;
-    font-size: 1rem;
-    margin: 10vh;
+    border: 1px solid grey;
+    &-state {
+      @include input;
+    }
+    &-propertyType {
+      @include input;
+    }
+    &-priceMin {
+      @include input;
+    }
+    &-priceMax {
+      @include input;
+    }
+    &-bedroomMin {
+      @include input;
+    }
+    &-bedroomMax {
+      @include input;
+    }
+    &-bathroomMin {
+      @include input;
+    }
+    &-bathroomMax {
+      @include input;
+    }
+    &-parkingMin {
+      @include input;
+    }
+    &-parkingMax {
+      @include input;
+    }
+    &-button {
+      font-size: 2rem;
+      color: var(--color-primary);
+      margin: 1rem;
+      padding: 5rem;
+    }
   }
 }
