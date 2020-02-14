@@ -10,7 +10,6 @@ import Filter from "./Filter";
 import Results from "./Results";
 import FullResult from "./FullResult";
 const Dashboard = () => <h2>Dashboard</h2>;
-
 class App extends React.Component {
   componentDidMount() {
     this.props.fetchUser();
@@ -23,7 +22,6 @@ class App extends React.Component {
             <Header />
             <Route exact path="/" component={Landing}></Route>
             <Route exact path="/dashboard" component={Dashboard}></Route>
-
             <Route exact path="/filter" component={Filter}></Route>
             <Route exact path="/results" component={Results}></Route>
             <Route exact path="/fullresult/:id" component={FullResult}></Route>

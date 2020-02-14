@@ -7,7 +7,9 @@
 }
 
 .section-header {
-  height: 30vh;
+  height: 35vh;
+  z-index: 2000;
+
   &__nav {
     color: var(--color-white);
     background-color: var(--color-primary);
