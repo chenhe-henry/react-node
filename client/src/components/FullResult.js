@@ -1,5 +1,6 @@
 import React from "react";
 import "../assets/FullResult.scss";
+import SimpleMap from "./SimpleMap";
 
 // import Carousel from "react-bootstrap/Carousel";
 // const keys = require("../config/keys");
@@ -90,6 +91,10 @@ class FullResult extends React.Component {
               ))}
             </ul>
           </div>
+          <SimpleMap
+            latAdd={this.state.loadedProperty.geoLocation.latitude}
+            lngAdd={this.state.loadedProperty.geoLocation.longitude}
+          />
         </div>
       );
     }
