@@ -91,10 +91,10 @@ class FullResult extends React.Component {
               ))}
             </ul>
           </div>
-          <SimpleMap
+          {/* <SimpleMap
             latAdd={this.state.loadedProperty.geoLocation.latitude}
             lngAdd={this.state.loadedProperty.geoLocation.longitude}
-          />
+          /> */}
         </div>
       );
     }
