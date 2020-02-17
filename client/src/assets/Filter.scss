@@ -14,6 +14,9 @@
     &-state {
       @include input;
     }
+    &-postCode {
+      @include input;
+    }
     &-propertyType {
       @include input;
     }
@@ -39,6 +42,9 @@
       @include input;
     }
     &-parkingMax {
+      @include input;
+    }
+    &-keywords {
       @include input;
     }
     &-button {

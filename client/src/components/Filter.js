@@ -24,8 +24,11 @@ class Filter extends React.Component {
     const bathroomMax = this.bathroomMax.value;
     const parkingMin = this.parkingMin.value;
     const parkingMax = this.parkingMax.value;
+    const keywords = this.keywords.value;
+    const postCode = this.postCode.value;
     const searchData = {
       location: location,
+      postCode: postCode,
       // propertyType: propertyType,
       priceMin: priceMin,
       priceMax: priceMax,
@@ -34,7 +37,8 @@ class Filter extends React.Component {
       bathroomMin: bathroomMin,
       bathroomMax: bathroomMax,
       parkingMin: parkingMin,
-      parkingMax: parkingMax
+      parkingMax: parkingMax,
+      keywords: keywords
     };
 
     this.setState({ listing: [] });
@@ -74,10 +78,11 @@ class Filter extends React.Component {
             region: "",
             area: "",
             suburb: "",
-            postCode: "",
+            postCode: this.state.searchData.postCode,
             includeSurroundingSuburbs: false
           }
-        ]
+        ],
+        keywords: [this.state.searchData.keywords]
       });
 
       var requestOptions = {
@@ -137,6 +142,15 @@ class Filter extends React.Component {
               <option value="NT">NT</option>
               <option value="TAS">TAS</option>
             </select>
+          </div>
+          <div className="section-filter__search-box-postCode">
+            <p>PostCode:</p>
+            <input
+              type="text"
+              onChange={this.postCodeHandler}
+              placeholder="postCode"
+              ref={input => (this.postCode = input)}
+            ></input>
           </div>
           {/* <div className="section-filter__search-box-propertyType">
             <p>Property Type:</p>
@@ -265,7 +279,15 @@ class Filter extends React.Component {
               <option value="">5+</option>
             </select>
           </div>
-
+          <div className="section-filter__search-box-keywords">
+            <p>Keywords:</p>
+            <input
+              type="text"
+              onChange={this.keywordsHandler}
+              placeholder="keywords"
+              ref={input => (this.keywords = input)}
+            ></input>
+          </div>
           <input
             type="submit"
             value="Search"
