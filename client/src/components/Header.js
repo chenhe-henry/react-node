@@ -21,7 +21,17 @@ class Header extends React.Component {
       default:
         return (
           <div>
-            {/* <div>Welcome, {this.props.auth.googleId}</div> */}
+            <div className="div-wrapper">
+              <div className="wrapper">
+                <img
+                  src={this.props.auth.googlePhoto}
+                  height="100px"
+                  width="100px"
+                  className="wrapper-pic"
+                />
+              </div>
+              <div>Welcome back, {this.props.auth.googleGivenName} !</div>
+            </div>
             <a
               href="/api/logout"
               className="section-header__nav--navi-link--login-white"
