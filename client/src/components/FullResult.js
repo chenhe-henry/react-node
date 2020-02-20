@@ -14,7 +14,7 @@ class FullResult extends React.Component {
     if (prevState.id !== this.state.id) {
       var myHeaders = new Headers();
       myHeaders.append("Content-Type", "application/json");
-      myHeaders.append("X-Api-Key", "key_358bea2380f4e7f0acb999de88b0b4e9");
+      myHeaders.append("X-Api-Key", process.env.REACT_APP_DOMAIN_API_KEY);
 
       var requestOptions = {
         method: "GET",

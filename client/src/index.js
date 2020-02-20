@@ -18,3 +18,7 @@ ReactDom.render(
   </Provider>,
   document.querySelector("#root")
 );
+
+console.log("DOMAIN KEY IS ", process.env.REACT_APP_DOMAIN_API_KEY);
+console.log("GOOGLE KEY IS ", process.env.REACT_APP_GOOGLE_API_KEY);
+console.log("Environment is ", process.env.NODE_ENV);
