@@ -56,7 +56,7 @@ const Results = props => {
                       src={c.photoUrl}
                       height="300px"
                       width="300px"
-                      alt={c.name}
+                      alt=" "
                       className="contact-wrapper-pic"
                     ></img>
                   </div>
