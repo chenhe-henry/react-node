@@ -17,9 +17,18 @@ const Results = props => {
             <div>
               <strong>{props.list.headline}</strong>
             </div>
-            <div>Bedrooms: {props.list.propertyDetails.bedrooms}</div>
-            <div>Bathrooms: {props.list.propertyDetails.bathrooms}</div>
-            <div>Carspaces: {props.list.propertyDetails.carspaces}</div>
+            <div>
+              <i class="fas fa-bed"></i> Bedrooms:{" "}
+              {props.list.propertyDetails.bedrooms}
+            </div>
+            <div>
+              <i class="fas fa-bath"></i> Bathrooms:
+              {props.list.propertyDetails.bathrooms}
+            </div>
+            <div>
+              <i class="fas fa-car"></i> Carspaces:{" "}
+              {props.list.propertyDetails.carspaces}
+            </div>
             <div>
               Address: {props.list.propertyDetails.displayableAddress},{" "}
               {props.list.propertyDetails.postcode},{" "}

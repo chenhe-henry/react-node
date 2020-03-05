@@ -209,7 +209,7 @@ class Filter extends React.Component {
               placeholder="bedroomMax"
               ref={input => (this.bedroomMax = input)}
             >
-              <option value="1">1</option>
+              {/* <option value="1">1</option> */}
               <option value="2">2</option>
               <option value="3">3</option>
               <option value="4">4</option>
@@ -240,7 +240,7 @@ class Filter extends React.Component {
               placeholder="bathroomMax"
               ref={input => (this.bathroomMax = input)}
             >
-              <option value="1">1</option>
+              {/* <option value="1">1</option> */}
               <option value="2">2</option>
               <option value="3">3</option>
               <option value="4">4</option>
@@ -271,7 +271,7 @@ class Filter extends React.Component {
               placeholder="parkingMax"
               ref={input => (this.parkingMax = input)}
             >
-              <option value="1">1</option>
+              {/* <option value="1">1</option> */}
               <option value="2">2</option>
               <option value="3">3</option>
               <option value="4">4</option>
