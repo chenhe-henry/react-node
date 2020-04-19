@@ -9,10 +9,10 @@ class Filter extends React.Component {
   state = {
     listing: [],
     searchData: [],
-    selectedListingId: null
+    selectedListingId: null,
   };
 
-  submitHandler = event => {
+  submitHandler = (event) => {
     event.preventDefault();
     const location = this.location.value;
     // const propertyType = this.propertyType.value;
@@ -38,14 +38,14 @@ class Filter extends React.Component {
       bathroomMax: bathroomMax,
       parkingMin: parkingMin,
       parkingMax: parkingMax,
-      keywords: keywords
+      keywords: keywords,
     };
 
     this.setState({ listing: [] });
     this.setState({ searchData });
     console.log(this.state.searchData);
   };
-  imgSeletedHandler = id => {
+  imgSeletedHandler = (id) => {
     this.setState({ selectedListingId: id });
     console.log("id :", id);
   };
@@ -53,7 +53,7 @@ class Filter extends React.Component {
     if (prevState.searchData !== this.state.searchData) {
       var myHeaders = new Headers();
       myHeaders.append("Content-Type", "application/json");
-      myHeaders.append("X-Api-Key", "key_358bea2380f4e7f0acb999de88b0b4e9");
+      myHeaders.append("X-Api-Key", "key_d247f2a2fb593f08045e175d2e8bd9b3");
       // var statelocate = ["NSW", "ACT", "QLD", "VIC", "SA", "WA", "NT", "TAS"];
       var raw = JSON.stringify({
         listingType: "Rent",
@@ -79,29 +79,29 @@ class Filter extends React.Component {
             area: "",
             suburb: "",
             postCode: this.state.searchData.postCode,
-            includeSurroundingSuburbs: false
-          }
+            includeSurroundingSuburbs: false,
+          },
         ],
-        keywords: [this.state.searchData.keywords]
+        keywords: [this.state.searchData.keywords],
       });
 
       var requestOptions = {
         method: "POST",
         headers: myHeaders,
         body: raw,
-        redirect: "follow"
+        redirect: "follow",
       };
       console.log(raw);
       fetch(
         "https://api.domain.com.au/v1/listings/residential/_search",
         requestOptions
       )
-        .then(response => response.json())
-        .then(result => {
+        .then((response) => response.json())
+        .then((result) => {
           console.log(result);
           this.setState({ listing: result });
         })
-        .catch(error => console.log("error", error));
+        .catch((error) => console.log("error", error));
     }
   }
 
@@ -131,7 +131,7 @@ class Filter extends React.Component {
               type="text"
               onChange={this.locationHandler}
               placeholder="location"
-              ref={input => (this.location = input)}
+              ref={(input) => (this.location = input)}
             >
               <option value="NSW">NSW</option>
               <option value="VIC">VIC</option>
@@ -149,7 +149,7 @@ class Filter extends React.Component {
               type="text"
               onChange={this.postCodeHandler}
               placeholder="postCode"
-              ref={input => (this.postCode = input)}
+              ref={(input) => (this.postCode = input)}
             ></input>
           </div>
           {/* <div className="section-filter__search-box-propertyType">
@@ -174,7 +174,7 @@ class Filter extends React.Component {
               type="text"
               onChange={this.priceMinHandler}
               placeholder="priceMin"
-              ref={input => (this.priceMin = input)}
+              ref={(input) => (this.priceMin = input)}
             ></input>
           </div>
           <div className="section-filter__search-box-priceMax">
@@ -183,7 +183,7 @@ class Filter extends React.Component {
               type="text"
               onChange={this.priceMaxHandler}
               placeholder="priceMax"
-              ref={input => (this.priceMax = input)}
+              ref={(input) => (this.priceMax = input)}
             ></input>
           </div>
           <div className="section-filter__search-box-bedroomMin">
@@ -192,7 +192,7 @@ class Filter extends React.Component {
               type="text"
               onChange={this.bedroomMinHandler}
               placeholder="bedroomMin"
-              ref={input => (this.bedroomMin = input)}
+              ref={(input) => (this.bedroomMin = input)}
             >
               <option value="1">1</option>
               <option value="2">2</option>
@@ -207,7 +207,7 @@ class Filter extends React.Component {
               type="text"
               onChange={this.bedroomMaxHandler}
               placeholder="bedroomMax"
-              ref={input => (this.bedroomMax = input)}
+              ref={(input) => (this.bedroomMax = input)}
             >
               {/* <option value="1">1</option> */}
               <option value="2">2</option>
@@ -223,7 +223,7 @@ class Filter extends React.Component {
               type="text"
               onChange={this.bathroomMinHandler}
               placeholder="bathroomMin"
-              ref={input => (this.bathroomMin = input)}
+              ref={(input) => (this.bathroomMin = input)}
             >
               <option value="1">1</option>
               <option value="2">2</option>
@@ -238,7 +238,7 @@ class Filter extends React.Component {
               type="text"
               onChange={this.bathroomMaxHandler}
               placeholder="bathroomMax"
-              ref={input => (this.bathroomMax = input)}
+              ref={(input) => (this.bathroomMax = input)}
             >
               {/* <option value="1">1</option> */}
               <option value="2">2</option>
@@ -254,7 +254,7 @@ class Filter extends React.Component {
               type="text"
               onChange={this.parkingMinHandler}
               placeholder="parkingMin"
-              ref={input => (this.parkingMin = input)}
+              ref={(input) => (this.parkingMin = input)}
             >
               <option value="1">1</option>
               <option value="2">2</option>
@@ -269,7 +269,7 @@ class Filter extends React.Component {
               type="text"
               onChange={this.parkingMaxHandler}
               placeholder="parkingMax"
-              ref={input => (this.parkingMax = input)}
+              ref={(input) => (this.parkingMax = input)}
             >
               {/* <option value="1">1</option> */}
               <option value="2">2</option>
@@ -285,7 +285,7 @@ class Filter extends React.Component {
               type="text"
               onChange={this.keywordsHandler}
               placeholder="keywords"
-              ref={input => (this.keywords = input)}
+              ref={(input) => (this.keywords = input)}
             ></input>
           </div>
           <input
