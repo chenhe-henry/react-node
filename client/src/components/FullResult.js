@@ -14,24 +14,24 @@ class FullResult extends React.Component {
     if (prevState.id !== this.state.id) {
       var myHeaders = new Headers();
       myHeaders.append("Content-Type", "application/json");
-      myHeaders.append("X-Api-Key", "key_358bea2380f4e7f0acb999de88b0b4e9");
+      myHeaders.append("X-Api-Key", "key_d247f2a2fb593f08045e175d2e8bd9b3");
 
       var requestOptions = {
         method: "GET",
         headers: myHeaders,
-        redirect: "follow"
+        redirect: "follow",
       };
 
       fetch(
         "https://api.domain.com.au/v1/listings/" + this.state.id,
         requestOptions
       )
-        .then(response => response.json())
-        .then(result => {
+        .then((response) => response.json())
+        .then((result) => {
           console.log(result);
           this.setState({ loadedProperty: result });
         })
-        .catch(error => console.log("error", error));
+        .catch((error) => console.log("error", error));
     }
   }
   render() {
@@ -90,7 +90,7 @@ class FullResult extends React.Component {
             </h3>
             <div>
               <ul>
-                {this.state.loadedProperty.features.map(f => (
+                {this.state.loadedProperty.features.map((f) => (
                   <li>{f}</li>
                 ))}
               </ul>
