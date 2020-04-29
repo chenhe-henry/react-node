@@ -83,7 +83,9 @@ class FullResult extends React.Component {
               <strong>
                 <h3>Description: </h3>
               </strong>
-              {this.state.loadedProperty.description}
+              <div className="full-result-preText">
+                {this.state.loadedProperty.description}
+              </div>
             </p>
             <h3>
               <strong>Features:</strong>
@@ -147,7 +149,9 @@ class FullResult extends React.Component {
               <strong>
                 <h3>Description: </h3>
               </strong>
-              {this.state.loadedProperty.description}
+              <div className="full-result-preText">
+                {this.state.loadedProperty.description}
+              </div>
             </p>
             <SimpleMap
               latAdd={this.state.loadedProperty.geoLocation.latitude}
