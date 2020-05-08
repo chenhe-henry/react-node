@@ -2,6 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import "../assets/Header.scss";
+import Headroom from "react-headroom";
 
 class Header extends React.Component {
   state = {};
@@ -45,29 +46,37 @@ class Header extends React.Component {
   render() {
     return (
       <div className="section-header">
-        <div className="section-header__nav">
-          <div className="section-header__nav--brand">
-            <Link to="/" className="section-header__nav--brand-link">
-              <img
-                src="/findhome-logo_transparent.png"
-                className="section-header__nav--brand-link--img"
-                alt="Find Home Logo"
-              ></img>
-              <p className="section-header__nav--brand-link--text">Find Home</p>
-            </Link>
-          </div>
-          <div className="section-header__nav--navi">
-            {/* <div className="section-header__nav--navi-link">
+        <Headroom
+          style={{
+            transition: "all .5s ease-in-out",
+          }}
+        >
+          <div className="section-header__nav">
+            <div className="section-header__nav--brand">
+              <Link to="/" className="section-header__nav--brand-link">
+                <img
+                  src="/findhome-logo_transparent.png"
+                  className="section-header__nav--brand-link--img"
+                  alt="Find Home Logo"
+                ></img>
+                <p className="section-header__nav--brand-link--text">
+                  Find Home
+                </p>
+              </Link>
+            </div>
+            <div className="section-header__nav--navi">
+              {/* <div className="section-header__nav--navi-link">
               <Link to="/filter" className="section-header__nav--navi-link">
                 Find a Property
               </Link>
             </div>
             <div className="section-header__nav--navi-link">News</div> */}
-            <div className="section-header__nav--navi-link--login">
-              {this.renderContent()}
+              <div className="section-header__nav--navi-link--login">
+                {this.renderContent()}
+              </div>
             </div>
-          </div>
-        </div>
+          </div>{" "}
+        </Headroom>
       </div>
     );
   }
