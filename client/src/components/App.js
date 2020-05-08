@@ -11,6 +11,7 @@ import Filter from "./Filter";
 import Results from "./Results";
 import FullResult from "./FullResult";
 import Dashboard from "./Dashboard";
+import News from "./News";
 class App extends React.Component {
   componentDidMount() {
     this.props.fetchUser();
@@ -26,6 +27,7 @@ class App extends React.Component {
             <Route exact path="/filter" component={Filter}></Route>
             <Route exact path="/results" component={Results}></Route>
             <Route exact path="/fullresult/:id" component={FullResult}></Route>
+            <Route exact path="/news" component={News}></Route>
             <Footer />
           </div>
         </BrowserRouter>

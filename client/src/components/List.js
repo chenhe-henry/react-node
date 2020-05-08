@@ -13,9 +13,11 @@ class List extends React.Component {
               <p className="word">Find a property</p>
             </div>
           </Link>
-          <div className="section-list__item-detail">
-            <p className="word">News</p>
-          </div>
+          <Link to="/news" className="word-link">
+            <div className="section-list__item-detail">
+              <p className="word">News</p>
+            </div>
+          </Link>
         </div>
         <BackGroundVideo />
       </div>
