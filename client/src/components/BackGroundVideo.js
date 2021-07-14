@@ -6,8 +6,8 @@ import "../assets/BackGroundVideo.scss";
 const BackGroundVideo = () => {
   return (
     <div>
-      <div class="bg-video">
-        <video class="bg-video__content" autoPlay muted loop>
+      <div className="bg-video">
+        <video className="bg-video__content" autoPlay muted loop>
           <source src={video} type="video/mp4" />
           <source src={videowebm} type="video/mp4" />
           Your browser is not supported!

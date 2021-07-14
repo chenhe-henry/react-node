@@ -120,7 +120,7 @@ class Footer extends React.Component {
         <div className="section-footer--primary">
           <div className="section-footer--primary--navi">
             <div className="section-footer--primary--navi-link">
-              <strong>&copy; 2020 Chen He, All Right Reserved.</strong>
+              <strong>&copy; 2020 Henry He, All Right Reserved.</strong>
             </div>
           </div>
         </div>

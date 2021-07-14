@@ -1,14 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../assets/Results.scss";
-const Results = props => {
+const Results = (props) => {
   const imgurlindex = Math.floor(Math.random() * 5);
   return (
     <div className="result">
       <Link
         to={{
           pathname: "/fullresult/" + props.list.id,
-          state: { id: props.list.id }
+          state: { id: props.list.id },
         }}
         className="result-link"
       >
@@ -18,15 +18,15 @@ const Results = props => {
               <strong>{props.list.headline}</strong>
             </div>
             <div>
-              <i class="fas fa-bed"></i> Bedrooms:{" "}
+              <i className="fas fa-bed"></i> Bedrooms:{" "}
               {props.list.propertyDetails.bedrooms}
             </div>
             <div>
-              <i class="fas fa-bath"></i> Bathrooms:
+              <i className="fas fa-bath"></i> Bathrooms:
               {props.list.propertyDetails.bathrooms}
             </div>
             <div>
-              <i class="fas fa-car"></i> Carspaces:{" "}
+              <i className="fas fa-car"></i> Carspaces:{" "}
               {props.list.propertyDetails.carspaces}
             </div>
             <div>
@@ -48,8 +48,8 @@ const Results = props => {
             <h1>Contact:</h1>
             <div>{props.list.advertiser.name}</div>
             <div>
-              {props.list.advertiser.contacts.map(c => (
-                <div className="comb">
+              {props.list.advertiser.contacts.map((c, index) => (
+                <div className="comb" key={index}>
                   <div>{c.name}</div>
                   <div className="contact-wrapper">
                     <img

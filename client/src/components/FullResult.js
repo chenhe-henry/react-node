@@ -42,15 +42,15 @@ class FullResult extends React.Component {
           <div className="full-result">
             <h1>{this.state.loadedProperty.headline}</h1>
             <h3>
-              <i class="fas fa-bed"></i>
+              <i className="fas fa-bed"></i>
               <strong>Bedrooms:</strong> {this.state.loadedProperty.bedrooms}
             </h3>
             <h3>
-              <i class="fas fa-bath"></i>
+              <i className="fas fa-bath"></i>
               <strong>Bathrooms:</strong> {this.state.loadedProperty.bathrooms}
             </h3>
             <h3>
-              <i class="fas fa-car"></i>
+              <i className="fas fa-car"></i>
               <strong>Carspaces:</strong> {this.state.loadedProperty.carspaces}
             </h3>
             <h3>
@@ -65,7 +65,12 @@ class FullResult extends React.Component {
               {/* <Carousel> */}
               {this.state.loadedProperty.media.map((i, index) => (
                 // <Carousel.Item id={index}>
-                <a href={i.url} target="_blank" rel="noopener noreferrer">
+                <a
+                  href={i.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  key={index}
+                >
                   <img
                     key={index}
                     src={i.url}
@@ -79,21 +84,21 @@ class FullResult extends React.Component {
               ))}
               {/* </Carousel> */}
             </div>
-            <p>
+            <div>
               <strong>
                 <h3>Description: </h3>
               </strong>
               <div className="full-result-preText">
                 {this.state.loadedProperty.description}
               </div>
-            </p>
+            </div>
             <h3>
               <strong>Features:</strong>
             </h3>
             <div>
               <ul>
-                {this.state.loadedProperty.features.map((f) => (
-                  <li>{f}</li>
+                {this.state.loadedProperty.features.map((f, index) => (
+                  <li key={index}>{f}</li>
                 ))}
               </ul>
             </div>
@@ -108,15 +113,15 @@ class FullResult extends React.Component {
           <div className="full-result">
             <h1>{this.state.loadedProperty.headline}</h1>
             <h3>
-              <i class="fas fa-bed"></i>
+              <i className="fas fa-bed"></i>
               <strong>Bedrooms:</strong> {this.state.loadedProperty.bedrooms}
             </h3>
             <h3>
-              <i class="fas fa-bath"></i>
+              <i className="fas fa-bath"></i>
               <strong>Bathrooms:</strong> {this.state.loadedProperty.bathrooms}
             </h3>
             <h3>
-              <i class="fas fa-car"></i>
+              <i className="fas fa-car"></i>
               <strong>Carspaces:</strong> {this.state.loadedProperty.carspaces}
             </h3>
             <h3>

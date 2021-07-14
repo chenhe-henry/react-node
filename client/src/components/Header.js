@@ -29,6 +29,7 @@ class Header extends React.Component {
                   height="100px"
                   width="100px"
                   className="wrapper-pic"
+                  alt="google avator"
                 />
               </div>
               <div>Welcome back, {this.props.auth.googleGivenName} !</div>
