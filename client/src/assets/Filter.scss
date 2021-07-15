@@ -5,53 +5,29 @@
 }
 
 .section-filter {
+  min-height: 47.5vh;
   background-color: var(--color-blue-light);
   font-size: var(--font-size-default);
   text-align: center;
-  display: grid;
   &__search-box {
     border: 1px solid grey;
-    &-state {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    & > * {
       @include input;
     }
-    &-postCode {
-      @include input;
-    }
-    &-propertyType {
-      @include input;
-    }
-    &-priceMin {
-      @include input;
-    }
-    &-priceMax {
-      @include input;
-    }
-    &-bedroomMin {
-      @include input;
-    }
-    &-bedroomMax {
-      @include input;
-    }
-    &-bathroomMin {
-      @include input;
-    }
-    &-bathroomMax {
-      @include input;
-    }
-    &-parkingMin {
-      @include input;
-    }
-    &-parkingMax {
-      @include input;
-    }
-    &-keywords {
-      @include input;
-    }
+
     &-button {
-      font-size: 2rem;
-      color: var(--color-primary);
-      margin: 1rem;
-      padding: 1rem;
+      cursor: pointer;
+      font-size: var(--font-size-default);
+      color: var(--color-white);
+      background-color: var(--color-primary-light);
+      margin: 1rem auto;
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
+      &:hover {
+        background-color: var(--color-primary);
+      }
     }
   }
 }

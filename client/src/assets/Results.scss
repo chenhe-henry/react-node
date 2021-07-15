@@ -1,7 +1,8 @@
 .result {
   border: 2px solid black;
+  border-radius: 10px;
   font-size: var(--font-size-default);
-  margin: var(--margin-box-default);
+  margin: 5rem 15vw;
   padding: var(--padding-box-default);
   background-color: var(--color-white);
   &-link {
@@ -25,17 +26,42 @@
 }
 .all_result {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
   align-items: center;
   justify-content: center;
 }
 .comb {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  & > * {
+    margin: 1rem;
+  }
 }
-
+.contact {
+  display: flex;
+  justify-content: space-evenly;
+}
 .contact__primary {
   border-left: 2px dotted black;
+  padding: 5rem;
+}
+.property-img {
+  margin-right: 5rem;
+}
+.property__primary {
+  display: flex;
+  justify-content: space-between;
+
+  &-text {
+    text-align: left;
+
+    & > div {
+      margin: 2rem 0;
+    }
+  }
+}
+.icon {
+  margin-right: 1rem;
 }

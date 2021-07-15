@@ -1,6 +1,7 @@
 :root {
   // COLOR
-  --color-primary: rgba(18, 191, 9);
+  --color-primary-light: rgba(18, 191, 9, 0.8);
+  --color-primary: rgba(18, 191, 9, 1);
   --color-white: rgba(255, 255, 255);
   --color-dark: rgba(52, 63, 51);
   --color-dark-light: rgb(33, 43, 31);
@@ -21,7 +22,7 @@
 
   //SPACING
   --margin-box-default: 10rem;
-  --padding-box-default: 5rem;
+  --padding-box-default: 3rem;
 }
 
 .all {

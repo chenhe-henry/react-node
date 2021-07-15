@@ -42,26 +42,26 @@ class FullResult extends React.Component {
           <div className="full-result">
             <h1>{this.state.loadedProperty.headline}</h1>
             <h3>
-              <i className="fas fa-bed"></i>
+              <i className="fas fa-bed icon"></i>
               <strong>Bedrooms:</strong> {this.state.loadedProperty.bedrooms}
             </h3>
             <h3>
-              <i className="fas fa-bath"></i>
+              <i className="fas fa-bath icon"></i>
               <strong>Bathrooms:</strong> {this.state.loadedProperty.bathrooms}
             </h3>
             <h3>
-              <i className="fas fa-car"></i>
+              <i className="fas fa-car icon"></i>
               <strong>Carspaces:</strong> {this.state.loadedProperty.carspaces}
             </h3>
             <h3>
-              <strong>Address:</strong>{" "}
+              <strong>Address:</strong>
               {this.state.loadedProperty.addressParts.displayAddress}
             </h3>
             <h3>
               <strong>Date available: </strong>
               {this.state.loadedProperty.dateAvailable}
             </h3>
-            <div>
+            <div className="images">
               {/* <Carousel> */}
               {this.state.loadedProperty.media.map((i, index) => (
                 // <Carousel.Item id={index}>
@@ -113,26 +113,26 @@ class FullResult extends React.Component {
           <div className="full-result">
             <h1>{this.state.loadedProperty.headline}</h1>
             <h3>
-              <i className="fas fa-bed"></i>
+              <i className="fas fa-bed icon"></i>
               <strong>Bedrooms:</strong> {this.state.loadedProperty.bedrooms}
             </h3>
             <h3>
-              <i className="fas fa-bath"></i>
+              <i className="fas fa-bath icon"></i>
               <strong>Bathrooms:</strong> {this.state.loadedProperty.bathrooms}
             </h3>
             <h3>
-              <i className="fas fa-car"></i>
+              <i className="fas fa-car icon"></i>
               <strong>Carspaces:</strong> {this.state.loadedProperty.carspaces}
             </h3>
             <h3>
-              <strong>Address:</strong>{" "}
+              <strong>Address:</strong>
               {this.state.loadedProperty.addressParts.displayAddress}
             </h3>
             <h3>
               <strong>Date available: </strong>
               {this.state.loadedProperty.dateAvailable}
             </h3>
-            <div>
+            <div className="images">
               {/* <Carousel> */}
               {this.state.loadedProperty.media.map((i, index) => (
                 // <Carousel.Item id={index}>
