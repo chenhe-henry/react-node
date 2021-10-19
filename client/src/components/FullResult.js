@@ -34,137 +34,89 @@ class FullResult extends React.Component {
         .catch((error) => console.log("error", error));
     }
   }
+  navigation = () => {
+    window.open(
+      `https://www.google.com/maps/?q=${this.state.loadedProperty.addressParts.displayAddress}`
+    );
+  };
   render() {
     let post = "";
-    if (this.state.loadedProperty) {
-      if (this.state.loadedProperty.features) {
-        post = (
-          <div className="full-result">
-            <h1>{this.state.loadedProperty.headline}</h1>
-            <h3>
-              <i className="fas fa-bed icon"></i>
-              <strong>Bedrooms:</strong> {this.state.loadedProperty.bedrooms}
-            </h3>
-            <h3>
-              <i className="fas fa-bath icon"></i>
-              <strong>Bathrooms:</strong> {this.state.loadedProperty.bathrooms}
-            </h3>
-            <h3>
-              <i className="fas fa-car icon"></i>
-              <strong>Carspaces:</strong> {this.state.loadedProperty.carspaces}
-            </h3>
-            <h3>
-              <strong>Address:</strong>
-              {this.state.loadedProperty.addressParts.displayAddress}
-            </h3>
-            <h3>
-              <strong>Date available: </strong>
-              {this.state.loadedProperty.dateAvailable}
-            </h3>
-            <div className="images">
-              {/* <Carousel> */}
-              {this.state.loadedProperty.media.map((i, index) => (
-                // <Carousel.Item id={index}>
-                <a
-                  href={i.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
+    let result = this.state.loadedProperty;
+    let feature =
+      result && result.features ? (
+        <div>
+          <h3>
+            <strong>Features:</strong>
+          </h3>
+          <ul>
+            {result.features.map((f, index) => (
+              <li key={index}>{f}</li>
+            ))}
+          </ul>
+        </div>
+      ) : (
+        ""
+      );
+    if (result) {
+      post = (
+        <div className="full-result">
+          <h1>{result.headline}</h1>
+          <h3>
+            <i className="fas fa-bed icon"></i>
+            <strong>Bedrooms:</strong> {result.bedrooms}
+          </h3>
+          <h3>
+            <i className="fas fa-bath icon"></i>
+            <strong>Bathrooms:</strong> {result.bathrooms}
+          </h3>
+          <h3>
+            <i className="fas fa-car icon"></i>
+            <strong>Carspaces:</strong> {result.carspaces}
+          </h3>
+          <h3 onClick={this.navigation}>
+            <strong>Address:</strong>
+            {result.addressParts.displayAddress}
+          </h3>
+          <h3>
+            <strong>Date available: </strong>
+            {result.dateAvailable}
+          </h3>
+          <div className="images">
+            {/* <Carousel> */}
+            {result.media.map((i, index) => (
+              // <Carousel.Item id={index}>
+              <a
+                href={i.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                key={index}
+              >
+                <img
                   key={index}
-                >
-                  <img
-                    key={index}
-                    src={i.url}
-                    height="300px"
-                    width="400px"
-                    alt="pics"
-                    className="full-result-img"
-                  ></img>
-                </a>
-                // </Carousel.Item>
-              ))}
-              {/* </Carousel> */}
-            </div>
-            <div>
-              <strong>
-                <h3>Description: </h3>
-              </strong>
-              <div className="full-result-preText">
-                {this.state.loadedProperty.description}
-              </div>
-            </div>
-            <h3>
-              <strong>Features:</strong>
-            </h3>
-            <div>
-              <ul>
-                {this.state.loadedProperty.features.map((f, index) => (
-                  <li key={index}>{f}</li>
-                ))}
-              </ul>
-            </div>
-            <SimpleMap
-              latAdd={this.state.loadedProperty.geoLocation.latitude}
-              lngAdd={this.state.loadedProperty.geoLocation.longitude}
-            />
+                  src={i.url}
+                  height="300px"
+                  width="400px"
+                  alt="pics"
+                  className="full-result-img"
+                ></img>
+              </a>
+              // </Carousel.Item>
+            ))}
+            {/* </Carousel> */}
           </div>
-        );
-      } else {
-        post = (
-          <div className="full-result">
-            <h1>{this.state.loadedProperty.headline}</h1>
-            <h3>
-              <i className="fas fa-bed icon"></i>
-              <strong>Bedrooms:</strong> {this.state.loadedProperty.bedrooms}
-            </h3>
-            <h3>
-              <i className="fas fa-bath icon"></i>
-              <strong>Bathrooms:</strong> {this.state.loadedProperty.bathrooms}
-            </h3>
-            <h3>
-              <i className="fas fa-car icon"></i>
-              <strong>Carspaces:</strong> {this.state.loadedProperty.carspaces}
-            </h3>
-            <h3>
-              <strong>Address:</strong>
-              {this.state.loadedProperty.addressParts.displayAddress}
-            </h3>
-            <h3>
-              <strong>Date available: </strong>
-              {this.state.loadedProperty.dateAvailable}
-            </h3>
-            <div className="images">
-              {/* <Carousel> */}
-              {this.state.loadedProperty.media.map((i, index) => (
-                // <Carousel.Item id={index}>
-                <a href={i.url} target="_blank" rel="noopener noreferrer">
-                  <img
-                    key={index}
-                    src={i.url}
-                    height="300px"
-                    width="400px"
-                    alt="pics"
-                    className="full-result-img"
-                  ></img>
-                </a>
-                // </Carousel.Item>
-              ))}
-              {/* </Carousel> */}
-            </div>
-            <p>
-              <strong>
-                <h3>Description: </h3>
-              </strong>
-              <div className="full-result-preText">
-                {this.state.loadedProperty.description}
-              </div>
-            </p>
-            <SimpleMap
-              latAdd={this.state.loadedProperty.geoLocation.latitude}
-              lngAdd={this.state.loadedProperty.geoLocation.longitude}
-            />
+          {feature}
+          <div>
+            <strong>
+              <h3>Description: </h3>
+            </strong>
+            <div className="full-result-preText">{result.description}</div>
           </div>
-        );
-      }
+          <SimpleMap
+            latAdd={result.geoLocation.latitude}
+            lngAdd={result.geoLocation.longitude}
+          />
+        </div>
+      );
     }
 
     return <div>{post}</div>;
